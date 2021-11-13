@@ -1,184 +1,537 @@
 @font-face {
-  font-family: 'League Spartan';
-  src: url('../fonts/LeagueSpartan-Bold.woff2') format('woff2'),
-      url('../fonts/LeagueSpartan-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'League Spartan';
+    src: url('../fonts/LeagueSpartan-Bold.woff2') format('woff2'),
+        url('../fonts/LeagueSpartan-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Neue Einstellung';
-  src: url('../fonts/NeueEinstellung-Bold.woff2') format('woff2'),
-      url('../fonts/NeueEinstellung-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'Neue Einstellung';
+    src: url('../fonts/NeueEinstellung-Bold.woff2') format('woff2'),
+        url('../fonts/NeueEinstellung-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'SF Pro Display';
-  src: url('../fonts/SFProDisplay-Bold.woff2') format('woff2'), url('../fonts/SFProDisplay-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Bold.woff2') format('woff2'), url('../fonts/SFProDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'SF Pro Display';
-  src: url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
-      url('../fonts/SFProDisplay-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'SF Pro Display';
-  src: url('../fonts/SFProDisplay-Medium.woff2') format('woff2'),
-      url('../fonts/SFProDisplay-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Medium.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 a {
-  text-decoration: none;
-  cursor: pointer;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 ul {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 li {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 img {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.button-link-list {
+    position: absolute;
+    width: 100%;
+    bottom: 14.5%;
+}
+.button-link-list .button-link {
+    background: #fe5e33;
+    max-width: 260px;
+    display: flex;
+    height: 50px;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.button-link-list .button-link .btn {
+    font-family: 'SF Pro Display';
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
 }
 
 .slick-dots {
-  bottom: 0 !important;
+    bottom: 0 !important;
 }
 .slick-dots li {
-  width: 8px !important;
-  height: 8px !important;
-  border-radius: 100%;
-  margin: 0 9px;
-  background: rgba(12, 13, 52, 0.3);
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 100%;
+    margin: 0 9px;
+    background: rgba(12, 13, 52, 0.3);
 }
 .slick-dots li.slick-active {
-  width: 10px !important;
-  height: 10px !important;
-  background: #fe5e33;
+    width: 10px !important;
+    height: 10px !important;
+    background: #fe5e33;
 }
 .slick-dots li button {
-  display: none !important;
+    display: none !important;
 }
 
 .OMB .navbar {
-  background: #edeef3;
-  display: flex;
-  justify-content: space-around;
-  padding: 25px 0;
+    background: #edeef3;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 0;
 }
 .OMB .navbar .text-holder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .OMB .navbar .text-holder .nav-text {
-  font-family: 'Poppins', sans-serif;
-  color: #252426;
-  text-transform: uppercase;
-  font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: #252426;
+    text-transform: uppercase;
+    font-size: 18px;
 }
 .OMB .navbar .icons-holder {
-  display: flex;
+    display: flex;
 }
 .OMB .navbar .icons-holder .account {
-  padding-right: 12px;
+    padding-right: 12px;
 }
 .OMB .banner-content-holder {
-  position: relative;
+    position: relative;
 }
 .OMB .banner-content-holder .banner-content {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  top: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
 }
 .OMB .banner-content-holder .banner-content .banner-heading {
-  font-family: 'League Spartan';
-  text-transform: uppercase;
-  font-size: 28px;
-  text-align: center;
-  margin-bottom: 10px;
+    font-family: 'League Spartan';
+    text-transform: uppercase;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 .OMB .banner-content-holder .banner-content .banner-heading .dot-color {
-  font-size: 35px;
-  color: #fc4b15;
+    font-size: 35px;
+    color: #fc4b15;
 }
 .OMB .banner-content-holder .banner-content .banner-text {
-  font-family: 'Neue Einstellung';
-  font-size: 12px;
-  text-transform: uppercase;
-  text-align: center;
-}
-.OMB .banner-content-holder .button-link-list {
-  position: absolute;
-  width: 100%;
-  bottom: 14.5%;
-}
-.OMB .banner-content-holder .button-link-list .button-link {
-  background: #fe5e33;
-  max-width: 260px;
-  display: flex;
-  height: 50px;
-  border-radius: 25px;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
-.OMB .banner-content-holder .button-link-list .button-link .btn {
-  font-family: 'SF Pro Display';
-  font-size: 15px;
-  color: #fff;
-  text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
 }
 .OMB .fashion-part .fashion-heading {
-  font-family: 'Poppins', sans-serif;
-  font-size: 24px;
-  line-height: 30px;
-  text-align: center;
-  letter-spacing: -1.5px;
-  color: #0c0d34;
-  max-width: 265px;
-  margin: 0 auto;
-  margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -1.5px;
+    color: #0c0d34;
+    max-width: 265px;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 .OMB .fashion-part .fashion-text {
-  font-family: 'SF Pro Display';
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  color: rgba(12, 13, 52, 0.7);
-  max-width: 315px;
-  margin: 0 auto;
-  margin-bottom: 20px;
+    font-family: 'SF Pro Display';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(12, 13, 52, 0.7);
+    max-width: 315px;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 .OMB .fashion-part .side-image {
-  margin: 0 15px;
+    margin: 0 15px 50px;
+    position: relative;
 }
 .OMB .fashion-part .side-image img {
-  border-radius: 5%;
+    border-radius: 5%;
+}
+.OMB .fashion-part .side-image .child-image {
+    position: absolute;
+    bottom: -24px;
+    width: 100%;
+    height: 100%;
+    left: -1.5%;
+    max-width: 70px;
+    min-height: 84px;
+    background-color: #fff;
+    max-height: 84px;
+    box-shadow: 0px 0.688181px 5.16136px rgba(0, 0, 0, 0.5);
+    border-radius: 5.53934px;
+}
+.OMB .products-holder {
+    padding: 0 12px;
+    margin-top: -23px;
+    margin-bottom: 40px;
+}
+.OMB .products-holder .products-content-holder {
+    margin-bottom: 32px;
+}
+.OMB .products-holder .products-content-holder .products-content {
+    text-align: center;
+    padding: 0 10px;
+}
+.OMB .products-holder .products-content-holder .products-content img {
+    background: transparent;
+    margin-bottom: 5px;
+}
+.OMB .products-holder .products-content-holder .products-content .products-text {
+    font-family: 'SF Pro Display';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: #0c0d34;
+    text-align: center;
+}
+.OMB .products-holder .products-content-holder .products-content .products-text .orange-text {
+    color: #fe5e33;
+}
+.OMB .products-holder .button-link-list {
+    position: unset;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
+}
+.OMB .categories-holder {
+    margin-bottom: 35px;
+}
+.OMB .categories-holder .categories-header-holder {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+.OMB .categories-holder .categories-header-holder .categories-header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 0.275px;
+    color: #323643;
+    margin: 0;
+}
+.OMB .categories-holder .categories-header-holder .swipe-right {
+    font-family: 'SF Pro Display';
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 24px;
+    color: #0c0d34;
+}
+.OMB .categories-holder .categories-header-holder .swipe-right .bold {
+    font-weight: 600;
+}
+.OMB .categories-holder .categories-slider-holder {
+    padding: 0 0 0 20px;
+}
+.OMB .categories-holder .categories-slider-holder .categories-slider .slick-list {
+    padding: 0 12% 0 0;
+}
+.OMB .categories-holder .categories-slider-holder .categories-slider .categories-content {
+    text-align: center;
+}
+.OMB .categories-holder .categories-slider-holder .categories-slider .categories-content .last-image {
+    max-width: 32px;
+    min-height: 69px;
+    max-height: 69px;
+}
+.OMB .categories-holder .categories-slider-holder .categories-slider .categories-content img {
+    max-width: 67px;
+    margin: 0 auto;
+}
+.OMB .categories-holder .categories-slider-holder .categories-slider .categories-content .category-text {
+    font-family: 'SF Pro Display';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #0c0d34;
+}
+.OMB .sale-holder {
+    padding: 0 0 0 20px;
+    margin-bottom: 35px;
+}
+.OMB .sale-holder .slick-list {
+    padding: 0 4% 0 0;
+}
+.OMB .sale-holder .sale-content-holder {
+    position: relative;
+}
+.OMB .sale-holder .sale-content-holder .sale-image {
+    margin-right: 10px;
+}
+.OMB .sale-holder .sale-content-holder .off-text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #fe5e33;
+    border-radius: 25px;
+    position: absolute;
+    top: 10%;
+    left: 7%;
+    display: flex;
+    align-items: center;
+    max-width: 103px;
+    width: 100%;
+    justify-content: center;
+    padding: 4px 0;
+}
+.OMB .sale-holder .sale-content-holder .off-text .fire-icon {
+    padding-right: 2px;
+}
+.OMB .sale-holder .sale-content-holder .off-text .fire-icon img {
+    width: 8px;
+    height: 8px;
+}
+.OMB .sale-holder .sale-content-holder .type-text {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 26px;
+    letter-spacing: 2.275px;
+    text-transform: capitalize;
+    color: #ffffff;
+    position: absolute;
+    bottom: 19%;
+    left: 7%;
+}
+.OMB .new-arrival-holder {
+    margin-bottom: 45px;
+}
+.OMB .new-arrival-holder .new-arrival-heading-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 15px;
+}
+.OMB .new-arrival-holder .new-arrival-heading-holder .new-arrival-heading {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.275px;
+    color: #323643;
+    margin: 0;
+}
+.OMB .new-arrival-holder .new-arrival-heading-holder .view-all {
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    color: #0c0d34;
+}
+.OMB .new-arrival-holder .new-arrival-products-holder {
+    padding-left: 18px;
+}
+.OMB .new-arrival-holder .new-arrival-products-holder .slick-list {
+    padding: 0 12% 0 0;
+}
+.OMB .new-arrival-holder .new-arrival-products-holder .new-arrival-products .new-arrival-image {
+    margin-right: 12px;
+    margin-bottom: 10px;
+}
+.OMB .new-arrival-holder .new-arrival-products-holder .new-arrival-products .products-text-holder {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+.OMB .new-arrival-holder .new-arrival-products-holder .new-arrival-products .products-text-holder .product-heading {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #333333;
+    margin: 0;
+    margin-bottom: 8px;
+}
+.OMB .new-arrival-holder .new-arrival-products-holder .new-arrival-products .products-text-holder .product-price {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.923077px;
+    color: #323643;
+    margin-bottom: 8px;
+    display: block;
+}
+.OMB .new-arrival-holder .new-arrival-products-holder .new-arrival-products .products-text-holder .button-link-list {
+    position: unset;
+}
+.OMB
+    .new-arrival-holder
+    .new-arrival-products-holder
+    .new-arrival-products
+    .products-text-holder
+    .button-link-list
+    .button-link {
+    max-width: 134px;
+    height: 31px;
+}
+.OMB
+    .new-arrival-holder
+    .new-arrival-products-holder
+    .new-arrival-products
+    .products-text-holder
+    .button-link-list
+    .button-link
+    .btn {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.OMB .new-collection {
+    margin-bottom: 25px;
+}
+.OMB .information-holder {
+    display: flex;
+}
+.OMB .information-holder .info-content-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 33.3%;
+}
+.OMB .information-holder .info-content-holder img {
+    max-width: 32px;
+    min-height: 26px;
+    max-height: 26px;
+    margin: 0 auto;
+    margin-bottom: 6px;
+}
+.OMB .information-holder .info-content-holder .info-content-heading {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #0c0d34;
+    max-width: 90px;
+    margin-bottom: 9px;
+}
+.OMB .information-holder .info-content-holder .info-content-text {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 9px;
+    line-height: 10px;
+    text-align: center;
+    color: #000000;
+    max-width: 107px;
+    min-height: 19.2px;
+}
+.OMB .divider {
+    height: 1px;
+    width: 100%;
+    background: #e2e6ec;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    max-width: 380px;
+}
+.OMB .design-prefer .heading {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -1.5px;
+    color: #0c0d34;
+}
+.OMB .design-prefer .design-text {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.342857px;
+    color: rgba(12, 13, 52, 0.5);
+}
+.OMB .design-prefer .design-prefer-holder .slick-dots .slick-active {
+    background: #0c0d34;
+}
+.OMB .design-prefer .design-prefer-holder .slick-dots li {
+    background: rgba(12, 13, 52, 0.3);
+}
+.OMB .design-prefer .design-prefer-holder .design-prefer-slider {
+    position: relative;
+}
+.OMB .design-prefer .design-prefer-holder .design-prefer-slider .user-logos {
+    position: absolute;
+    right: 4%;
+    top: 4%;
+}
+.OMB .design-prefer .design-prefer-holder .design-prefer-slider .user-logos img {
+    max-width: 70px;
+}
+.OMB .design-prefer .design-prefer-holder .design-prefer-slider .user-text {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    color: #0c0d34;
 }

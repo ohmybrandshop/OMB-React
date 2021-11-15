@@ -1,20 +1,15 @@
-import burger from './../images/burger.svg';
-import companyLogo from './../images/company-logo.svg';
-import account from './../images/account.svg';
-import cart from './../images/cart.svg';
-
 const Navbar = () => {
     return (
         <div className="navbar">
             <span className="breadcrumb">
-                <img className="mobile-image" src={burger} alt="burger" />
+                <img className="mobile-image" src="/images/burger.svg" alt="burger" />
             </span>
             <div className="text-holder">
-                <img className="mobile-image" src={companyLogo} alt="company-logo" />
+                <img className="mobile-image" src="/images/company-logo.svg" alt="company-logo" />
             </div>
             <span className="icons-holder">
-                <img className="mobile-image account" src={account} alt="account" />
-                <img className="mobile-image" src={cart} alt="cart" />
+                <img className="mobile-image account" src="/images/account.svg" alt="account" />
+                <img className="mobile-image" src="/images/cart.svg" alt="cart" />
             </span>
         </div>
     );

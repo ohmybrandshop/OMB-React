@@ -1,96 +1,37 @@
+// React Imports
+import { useState } from 'react';
+// My Components Imports
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import BannerSlider from './components/sliders/BannerSlider';
+import ProductsSlider from './components/sliders/ProductsSlider';
+import CategoriesSlider from './components/sliders/CategoriesSlider';
+import SaleSlider from './components/sliders/SaleSlider';
+import NewArrivalSlider from './components/sliders/NewArrivalSlider';
+import ReviewSlider from './components/sliders/ReviewSlider';
+import InstaGallery from './components/InstaGallery';
+// Css Imports
 import './css/App.css';
 import './../node_modules/slick-carousel/slick/slick.css';
 import './../node_modules/slick-carousel/slick/slick-theme.css';
-import Slider from 'react-slick';
-import headerBg from './images/header-bg.png';
-import fashion from './images/fashion-image.png';
-import avatar from './images/avatar.png';
-import item from './images/item.png';
-import item1 from './images/item-1.png';
-import item2 from './images/item-2.png';
-import newCategory from './images/new-category.png';
-import summerCategory from './images/summer-category.png';
-import winterCategory from './images/winter-category.png';
-import outletCategory from './images/outlet-category.png';
-import menSale from './images/men-sale.png';
-import saleLogo from './images/sale-logo.svg';
-import womenSale from './images/women-sale.png';
-import christmasSale from './images/christmas-sale.png';
-import christmasSale1 from './images/christmas-sale-1.png';
-import newArrival from './images/new-arrival.png';
-import newArrival1 from './images/new-arrival-1.png';
-import newCollection from './images/new-collection.png';
-import shipping from './images/shipping.svg';
-import payment from './images/payment.svg';
-import guarentee from './images/guarentee.svg';
-import Navbar from './components/Navbar';
 
 function App() {
-    const bannerSettings = {
-        dots: true,
-        infinite: false,
-        speed: 300,
-        slidesToScroll: 1,
-        slidesToShow: 1,
-    };
-
-    const productsSliderSettings = {
-        dots: false,
-        infinite: true,
-        speed: 300,
-        slidesToScroll: 1,
-        slidesToShow: 2,
-        swipeToSlide: true,
-        arrows: false,
-    };
-
-    const categorySliderSettings = {
-        dots: false,
-        infinite: true,
-        speed: 300,
-        slidesToScroll: 1,
-        slidesToShow: 4,
-        swipeToSlide: true,
-        arrows: false,
-    };
-
-    const saleSliderSettings = {
-        dots: false,
-        infinite: true,
-        speed: 300,
-        slidesToScroll: 1,
-        slidesToShow: 1,
-        arrows: false,
-    };
-
-    const newArrivalSettings = {
-        dots: false,
-        infinite: true,
-        speed: 300,
-        slidesToScroll: 1,
-        slidesToShow: 2,
-        swipeToSlide: true,
-        arrows: false,
-    };
+    const [bannerTextIsBlack, setBannerTextIsBlack] = useState(true);
 
     return (
-        <div className="OMB">
+        <>
             <Navbar />
 
+            {/* Banner Section */}
             <div className="banner-content-holder">
-                <div className="slider-image">
-                    <Slider {...bannerSettings}>
-                        <img src={headerBg} alt="header-image1" />
-                        <img src={headerBg} alt="header-image2" />
-                        <img src={headerBg} alt="header-image3" />
-                        <img src={headerBg} alt="header-image4" />
-                    </Slider>
-                </div>
+                <BannerSlider setBannerTextIsBlack={setBannerTextIsBlack} />
                 <div className="banner-content">
-                    <h1 className="banner-heading">
+                    <h1 className="banner-heading" style={{ color: bannerTextIsBlack ? '#000' : '#fff' }}>
                         Custom PJ's With Your Pet Character<span className="dot-color">.</span>
                     </h1>
-                    <div className="banner-text">Your pet, is now your brand</div>
+                    <div className="banner-text" style={{ color: bannerTextIsBlack ? '#000' : '#fff' }}>
+                        Your pet, is now your brand
+                    </div>
                 </div>
                 <ul className="button-link-list">
                     <li className="button-link">
@@ -101,6 +42,7 @@ function App() {
                 </ul>
             </div>
 
+            {/* Fashion Section */}
             <div className="fashion-part">
                 <h3 className="fashion-heading" style={{ marginTop: 20 }}>
                     A new fashion world for every pet owner
@@ -109,43 +51,16 @@ function App() {
                     Turn your pet photo into stunning custom PJ’s & Products with your pet character cartoon
                 </div>
                 <div className="side-image">
-                    <img src={fashion} alt="fashion1" />
+                    <img src="/images/fashion-image.png" alt="fashion1" />
                     <span className="child-image">
-                        <img src={avatar} alt="ava" />
+                        <img src="/images/avatar.png" alt="ava" />
                     </span>
                 </div>
             </div>
 
+            {/* Products Section */}
             <div className="products-holder">
-                <div className="products-content-holder">
-                    <Slider {...productsSliderSettings}>
-                        <div className="products-content">
-                            <img src={item} alt="it" />
-                            <span className="products-text">
-                                <span className="orange-text">Docas</span> Winter Set
-                            </span>
-                        </div>
-                        <div className="products-content">
-                            <img src={item1} alt="item-1" />
-                            <span className="products-text">
-                                <span className="orange-text">Docas</span> Summer Set
-                            </span>
-                        </div>
-                        <div className="products-content">
-                            <img src={item2} alt="item-2" />
-                            <span className="products-text">
-                                <span className="orange-text">Docas</span> Character
-                            </span>
-                        </div>
-                        <div className="products-content">
-                            <img src={item2} alt="item-2" />
-                            <span className="products-text">
-                                <span className="orange-text">Docas</span> Character
-                            </span>
-                        </div>
-                    </Slider>
-                </div>
-
+                <ProductsSlider />
                 <ul className="button-link-list">
                     <li className="button-link">
                         <a href="#" className="btn">
@@ -155,6 +70,7 @@ function App() {
                 </ul>
             </div>
 
+            {/* Categories Section */}
             <div className="categories-holder">
                 <div className="categories-header-holder">
                     <h5 className="categories-header">Categories</h5>
@@ -167,76 +83,15 @@ function App() {
                 </div>
                 <div className="categories-slider-holder">
                     <div className="categories-slider">
-                        <Slider {...categorySliderSettings}>
-                            <div className="categories-content">
-                                <img src={newCategory} alt="new-category" />
-                                <span className="category-text"> New In </span>
-                            </div>
-                            <div className="categories-content">
-                                <img src={summerCategory} alt="summer-category" />
-                                <span className="category-text"> Summer </span>
-                            </div>
-                            <div className="categories-content">
-                                <img src={outletCategory} alt="outlet-category" />
-                                <span className="category-text"> Pets </span>
-                            </div>
-                            <div className="categories-content">
-                                <img src={winterCategory} alt="winter-category" />
-                                <span className="category-text"> Winter </span>
-                            </div>
-                            <div className="categories-content">
-                                <img src={outletCategory} alt="outlet-category" />
-                                <span className="category-text"> Pets </span>
-                            </div>
-                        </Slider>
+                        <CategoriesSlider />
                     </div>
                 </div>
             </div>
 
-            <div className="sale-holder">
-                <Slider {...saleSliderSettings}>
-                    <div className="sale-content-holder">
-                        <div className="sale-image">
-                            <img src={menSale} alt="men-sale" />
-                        </div>
-                        <span className="off-text">
-                            <span className="fire-icon">
-                                <img src={saleLogo} alt="sale-logo" />
-                            </span>
-                            Up to 50% off
-                        </span>
-                        <span className="type-text"> Women </span>
-                    </div>
+            {/* Sale Section */}
+            <SaleSlider />
 
-                    <div className="sale-content-holder">
-                        <div className="sale-image">
-                            <img src={womenSale} alt="women-sale" />
-                        </div>
-                        <span className="off-text">
-                            <span className="fire-icon">
-                                <img src={saleLogo} alt="sale-logo" />
-                            </span>
-                            Up to 50% off
-                        </span>
-                        <span className="type-text"> Men </span>
-                    </div>
-
-                    <div className="sale-content-holder">
-                        <div className="sale-image">
-                            <img src={christmasSale} alt="christmas-sale" />
-                        </div>
-                        <span className="type-text"> Christmas </span>
-                    </div>
-
-                    <div className="sale-content-holder">
-                        <div className="sale-image">
-                            <img src={christmasSale1} alt="christmas-sale-1" />
-                        </div>
-                        <span className="type-text"> Chrismtas </span>
-                    </div>
-                </Slider>
-            </div>
-
+            {/* New Arrival Section */}
             <div className="new-arrival-holder">
                 <div className="new-arrival-heading-holder">
                     <h5 className="new-arrival-heading">New arrivals</h5>
@@ -244,86 +99,181 @@ function App() {
                         View all
                     </a>
                 </div>
-                <div className="new-arrival-products-holder">
-                    <Slider {...newArrivalSettings}>
-                        <div className="new-arrival-products">
-                            <div className="new-arrival-image">
-                                <img src={newArrival} alt="new-arrival" />
-                            </div>
-                            <div className="products-text-holder">
-                                <h6 className="product-heading">Longie Sleeve</h6>
-                                <span className="product-price"> $12 </span>
-                                <ul className="button-link-list">
-                                    <li className="button-link">
-                                        <a href="" className="btn">
-                                            Customize{' '}
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div className="new-arrival-products">
-                            <div className="new-arrival-image">
-                                <img src={newArrival1} />
-                            </div>
-                            <div className="products-text-holder">
-                                <h6 className="product-heading">Yellow Beret</h6>
-                                <span className="product-price"> $12 </span>
-                                <ul className="button-link-list">
-                                    <li className="button-link">
-                                        <a href="" className="btn">
-                                            Customize{' '}
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div className="new-arrival-products">
-                            <div className="new-arrival-image">
-                                <img src={newArrival1} />
-                            </div>
-                            <div className="products-text-holder">
-                                <h6 className="product-heading">Long Sleeves</h6>
-                                <span className="product-price"> $12 </span>
-                                <ul className="button-link-list">
-                                    <li className="button-link">
-                                        <a href="" className="btn">
-                                            Customize{' '}
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </Slider>
-                </div>
+                <NewArrivalSlider />
             </div>
 
+            {/* Video Section */}
             <div className="new-collection">
-                <img src={newCollection} />
+                <video height="350" autoPlay={true} loop controls={false} muted={true}>
+                    <source src="/images/autoplay.mp4" type="video/mp4" />
+                </video>
+                <ul className="button-link-list">
+                    <li className="button-link">
+                        <a href="#" className="btn">
+                            Explore now
+                        </a>
+                    </li>
+                </ul>
             </div>
 
+            {/* Information Holder Section */}
             <div className="information-holder">
                 <div className="info-content-holder">
-                    <img src={shipping} />
+                    <img src="/images/shipping.svg" />
                     <div className="info-content-heading">Free shipping over $60</div>
                     <div className="info-content-text">1-3 business days with Worldwide Express Shipping</div>
                 </div>
                 <div className="info-content-holder">
-                    <img src={payment} />
+                    <img src="/images/payment.svg" />
                     <div className="info-content-heading">Secure payment methods</div>
                     <div className="info-content-text">Fast and Easy!</div>
                 </div>
                 <div className="info-content-holder">
-                    <img src={guarentee} />
+                    <img src="/images/guarentee.svg" />
                     <div className="info-content-heading">Happines 100% Guaranteed</div>
                     <div className="info-content-text">Review your order simultion before producing!</div>
                 </div>
             </div>
 
-            <div class="divider"></div>
-        </div>
+            {/* Divider */}
+            <div className="divider"></div>
+
+            {/* How It Works Section */}
+            <div className="how-it-works">
+                <h5 className="how-it-works-heading">How it works</h5>
+                <div className="hiw-content-holder">
+                    <div className="hiw-image">
+                        <img src="/images/hiw-browse.png" />
+                    </div>
+                    <div className="hiw-heading">Browse the selection</div>
+                    <div className="hiw-text">Shop our selection of T-Shirts, Shirts, Pants, Sweaters and more.</div>
+                </div>
+                <div className="hiw-arrow">
+                    <img src="/images/hiw-arrows.png" />
+                </div>
+                <div className="hiw-content-holder">
+                    <div className="hiw-image">
+                        <img src="/images/hiw-upload.png" />
+                    </div>
+                    <div className="hiw-heading">Upload & order</div>
+                    <div className="hiw-text">Upload your pet’s pictures and place your order (complete purchase)</div>
+                </div>
+                <div className="hiw-arrow">
+                    <img src="/images/hiw-arrows.png" />
+                </div>
+                <div className="hiw-content-holder">
+                    <div className="hiw-image">
+                        <img src="/images/hiw-preview.png" />
+                    </div>
+                    <div className="hiw-heading">Preview & receive your perfect look!</div>
+                    <div className="hiw-text">
+                        Up to 24 hours from placing your order, you will get a notification with a preview of your
+                        clothing. Approve, and the order is on the way to you!
+                    </div>
+                </div>
+                <ul className="button-link-list">
+                    <li className="button-link">
+                        <a href="#" className="btn">
+                            Let's get started{' '}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            {/* Review Section */}
+            <div className="reviews-holder">
+                <h5 className="reviews-heading">Reviews that made our day</h5>
+                <div className="reviews-text">We love seeing your beautiful stories, reels and Tiktoks!</div>
+                <ul className="reviews-silder">
+                    <ReviewSlider />
+                </ul>
+                <div className="swipe-right">
+                    <a href="#" className="swipe-right bold">
+                        Swipe left-right
+                    </a>{' '}
+                    to see more
+                </div>
+            </div>
+
+            {/* News Letter */}
+            <div className="newsletter">
+                <h6 className="newsletter-heading">Sign up for the newsletter</h6>
+                <div className="newsletter-text">
+                    Be the first with the latest news and take advantage of some great offers!
+                </div>
+                <ul className="input-holder">
+                    <form>
+                        <input type="text" className="input-text" placeholder="Enter your email adress..." />
+                        <a className="input-button">
+                            <img src="/images/button.png" />
+                        </a>
+                    </form>
+                </ul>
+            </div>
+
+            {/* Customer Support */}
+            <div className="customer-support">
+                <div className="customer-support-text">Customer support</div>
+                <h6 className="customer-support-heading">How can we help you?</h6>
+                <div className="customer-support-image">
+                    <img src="/images/customer-support.png" />
+                </div>
+                <ul className="customer-support-list-holder">
+                    <li>
+                        <a className="help-links"> FAQ </a>
+                    </li>
+                    <li>
+                        <a className="help-links"> Size guide </a>
+                    </li>
+                    <li>
+                        <a className="help-links"> How it works </a>
+                    </li>
+                    <li>
+                        <a className="help-links"> Live chat </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div className="saving-pets">
+                <h5 className="pets-heading">Saving pets together.</h5>
+                <div className="pets-image">
+                    <img src="/images/saving-pets.png" />
+                </div>
+                <div className="saving-pets-text">
+                    With each purchase, we will increase awareness of animal adoption. And we will donate money to save
+                    animals around the world
+                </div>
+                <img className="numbers-image" src="/images/Numbers.png" />
+            </div>
+
+            <div className="insta-posts">
+                <div className="insta-user-holder">
+                    <div className="insta-logo-holder">
+                        <img src="/images/insta-logo.png" />
+                        <div className="name-text-holder">
+                            <h6 className="brand-name">OHMYBRAND</h6>
+                            <div className="brand-user-name">@ohmybrand_official</div>
+                        </div>
+                    </div>
+                    <div className="posts-holder">
+                        120
+                        <div className="posts-text">posts</div>
+                    </div>
+                    <div className="posts-holder">
+                        21.6k
+                        <div className="posts-text">followers</div>
+                    </div>
+                    <div className="posts-holder">
+                        50
+                        <div className="posts-text">following</div>
+                    </div>
+                </div>
+            </div>
+
+            <InstaGallery />
+
+            <Footer />
+        </>
     );
 }
 

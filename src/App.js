@@ -103,7 +103,7 @@ function App() {
             {/* Video Section */}
             <div className="new-collection">
                 <div dangerouslySetInnerHTML={{ __html: `
-                    <video height="350" autoplay="autoplay"}>
+                    <video height="350" loop muted autoplay playsinline>
                         <source src="/images/autoplay.mp4" type="video/mp4" />
                     </video>
                 `}}>

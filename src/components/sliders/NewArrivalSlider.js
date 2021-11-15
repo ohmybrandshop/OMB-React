@@ -31,25 +31,27 @@ const newArrivalSettings = {
     speed: 300,
     slidesToScroll: 1,
     slidesToShow: 2,
-    swipeToSlide: true,
-    arrows: false,
+    arrows:false,
+    centerMode: true,
+    centerPadding:'20px 0 0',
+    lazyLoad: true,
 };
 
 const slides = [
     {
-        imgSrc: '/images/new-arrival.png',
+        imgSrc: '/images/new-arrival.webp',
         alt: 'new-arrival',
         productName: 'Longie Sleeve',
         productPrice: '12',
     },
     {
-        imgSrc: '/images/new-arrival-1.png',
+        imgSrc: '/images/new-arrival-1.webp',
         alt: 'new_arrival_1',
         productName: 'Yellow Beret',
         productPrice: '12',
     },
     {
-        imgSrc: '/images/new-arrival-1.png',
+        imgSrc: '/images/new-arrival-1.webp',
         alt: 'new_arrival_long_sleeves',
         productName: 'Long Sleeves',
         productPrice: '12',

@@ -8,7 +8,7 @@ const ReviewSlider = () => {
                     <div className="review-slider-content">
                         <img src={slide.imgSrc} />
                         <span className="checkmark">
-                            <img src="/images/checkmark.png" />
+                            <img src="/images/checkmark.webp" />
                         </span>
                     </div>
                 </li>
@@ -23,22 +23,22 @@ const reviewSliderSettings = {
     speed: 300,
     slidesToScroll: 1,
     slidesToShow: 1,
-    arrows: false,
+    arrows:false,
     centerMode: true,
-    centerPadding: '100px',
+    centerPadding:'100px',
 };
 
 const slides = [
     {
-        imgSrc: '/images/review-image.png',
+        imgSrc: '/images/review-image.webp',
         alt: 'review-1',
     },
     {
-        imgSrc: '/images/review-image.png',
+        imgSrc: '/images/review-image.webp',
         alt: 'review-2',
     },
     {
-        imgSrc: '/images/review-image.png',
+        imgSrc: '/images/review-image.webp',
         alt: 'review-3',
     },
 ];

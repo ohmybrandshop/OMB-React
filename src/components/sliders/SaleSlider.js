@@ -35,17 +35,20 @@ const saleSliderSettings = {
     speed: 300,
     slidesToScroll: 1,
     slidesToShow: 1,
-    arrows: false,
+    arrows:false,
+    centerMode: true,
+    centerPadding:'10px 0 0',
+    lazyLoad: true,
 };
 
 const saleSlides = [
     {
-        imgSrc: '/images/men-sale.png',
+        imgSrc: '/images/men-sale.webp',
         alt: 'men_sale',
         text: 'Women',
     },
     {
-        imgSrc: '/images/women-sale.png',
+        imgSrc: '/images/women-sale.webp',
         alt: 'women_sale',
         text: 'Men',
     },
@@ -53,12 +56,12 @@ const saleSlides = [
 
 const christmasSlides = [
     {
-        imgSrc: '/images/christmas-sale.png',
+        imgSrc: '/images/christmas-sale.webp',
         alt: 'christmas_sale',
         text: 'Christmas',
     },
     {
-        imgSrc: '/images/christmas-sale-1.png',
+        imgSrc: '/images/christmas-sale-1.webp',
         alt: 'christmas_sale_1',
         text: 'Christmas',
     },

@@ -9,11 +9,9 @@ import CategoriesSlider from './components/sliders/CategoriesSlider';
 import SaleSlider from './components/sliders/SaleSlider';
 import NewArrivalSlider from './components/sliders/NewArrivalSlider';
 import ReviewSlider from './components/sliders/ReviewSlider';
+import DesignPreferSlider from './components/sliders/DesignPreferSlider';
+import QualitySlider from './components/sliders/QualitySlider';
 import InstaGallery from './components/InstaGallery';
-// Css Imports
-import './css/App.css';
-import './../node_modules/slick-carousel/slick/slick.css';
-import './../node_modules/slick-carousel/slick/slick-theme.css';
 
 function App() {
     const [bannerTextIsBlack, setBannerTextIsBlack] = useState(true);
@@ -51,9 +49,9 @@ function App() {
                     Turn your pet photo into stunning custom PJ’s & Products with your pet character cartoon
                 </div>
                 <div className="side-image">
-                    <img src="/images/fashion-image.png" alt="fashion1" />
+                    <img src="/images/fashion-image.webp" alt="fashion1" />
                     <span className="child-image">
-                        <img src="/images/avatar.png" alt="ava" />
+                        <img src="/images/avatar.webp" alt="ava" />
                     </span>
                 </div>
             </div>
@@ -104,9 +102,12 @@ function App() {
 
             {/* Video Section */}
             <div className="new-collection">
-                <video height="350" autoPlay={true} loop controls={false} muted={true}>
-                    <source src="/images/autoplay.mp4" type="video/mp4" />
-                </video>
+                <div dangerouslySetInnerHTML={{ __html: `
+                    <video height="350" autoplay="autoplay"}>
+                        <source src="/images/autoplay.mp4" type="video/mp4" />
+                    </video>
+                `}}>
+                </div>
                 <ul className="button-link-list">
                     <li className="button-link">
                         <a href="#" className="btn">
@@ -138,32 +139,48 @@ function App() {
             {/* Divider */}
             <div className="divider"></div>
 
+
+            {/* Design Prefer */}
+            <div className="design-prefer">
+                <h4 className="heading">Design you prefer</h4>
+                <div className="design-text">
+                    Based on your selections we will create PJ’s & products matching with your pet cartoon.
+                </div>
+                <DesignPreferSlider />
+                <div class="social-image">
+                    <img src="/images/social.webp" />
+                </div>
+            </div>
+
+            {/* Quality Slider */}
+            <QualitySlider />
+
             {/* How It Works Section */}
             <div className="how-it-works">
                 <h5 className="how-it-works-heading">How it works</h5>
                 <div className="hiw-content-holder">
                     <div className="hiw-image">
-                        <img src="/images/hiw-browse.png" />
+                        <img src="/images/hiw-browse.webp" />
                     </div>
                     <div className="hiw-heading">Browse the selection</div>
                     <div className="hiw-text">Shop our selection of T-Shirts, Shirts, Pants, Sweaters and more.</div>
                 </div>
                 <div className="hiw-arrow">
-                    <img src="/images/hiw-arrows.png" />
+                    <img src="/images/hiw-arrows.webp" />
                 </div>
                 <div className="hiw-content-holder">
                     <div className="hiw-image">
-                        <img src="/images/hiw-upload.png" />
+                        <img src="/images/hiw-upload.webp" />
                     </div>
                     <div className="hiw-heading">Upload & order</div>
                     <div className="hiw-text">Upload your pet’s pictures and place your order (complete purchase)</div>
                 </div>
                 <div className="hiw-arrow">
-                    <img src="/images/hiw-arrows.png" />
+                    <img src="/images/hiw-arrows.webp" />
                 </div>
                 <div className="hiw-content-holder">
                     <div className="hiw-image">
-                        <img src="/images/hiw-preview.png" />
+                        <img src="/images/hiw-preview.webp" />
                     </div>
                     <div className="hiw-heading">Preview & receive your perfect look!</div>
                     <div className="hiw-text">

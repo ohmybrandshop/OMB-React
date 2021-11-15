@@ -21,28 +21,28 @@ const productsSliderSettings = {
     speed: 300,
     slidesToScroll: 1,
     slidesToShow: 2,
-    swipeToSlide: true,
-    arrows: false,
+    arrows:false,
+    lazyLoad: true,
 };
 
 const slides = [
     {
-        imgSrc: '/images/item.png',
+        imgSrc: '/images/item.webp',
         alt: 'it',
         text: 'Winter Set',
     },
     {
-        imgSrc: '/images/item-1.png',
+        imgSrc: '/images/item-1.webp',
         alt: 'item-1',
         text: 'Summer Set',
     },
     {
-        imgSrc: '/images/item-2.png',
+        imgSrc: '/images/item-2.webp',
         alt: 'item-2',
         text: 'Character',
     },
     {
-        imgSrc: '/images/item-2.png',
+        imgSrc: '/images/item-2.webp',
         alt: 'item-3',
         text: 'Character',
     },

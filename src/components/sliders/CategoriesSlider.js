@@ -19,33 +19,35 @@ const categorySliderSettings = {
     speed: 300,
     slidesToScroll: 1,
     slidesToShow: 4,
-    swipeToSlide: true,
-    arrows: false,
+    arrows:false,
+    centerMode: true,
+    centerPadding:'20px 0 0',
+    lazyLoad: true,
 };
 
 const slides = [
     {
-        imgSrc: '/images/new-category.png',
+        imgSrc: '/images/new-category.webp',
         alt: 'new-category',
         text: 'New In',
     },
     {
-        imgSrc: '/images/summer-category.png',
+        imgSrc: '/images/summer-category.webp',
         alt: 'summer-category-alt',
         text: 'Summer',
     },
     {
-        imgSrc: '/images/outlet-category.png',
+        imgSrc: '/images/outlet-category.webp',
         alt: 'outlet-category-alt',
         text: 'Pets',
     },
     {
-        imgSrc: '/images/winter-category.png',
+        imgSrc: '/images/winter-category.webp',
         alt: 'winter-category',
         text: 'Winter',
     },
     {
-        imgSrc: '/images/winter-category.png',
+        imgSrc: '/images/winter-category.webp',
         alt: 'winter-category',
         text: 'Winter',
     },

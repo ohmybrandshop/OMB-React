@@ -22,24 +22,25 @@ const bannerSettings = {
     speed: 300,
     slidesToScroll: 1,
     slidesToShow: 1,
-    arrows: false,
+    arrows:false,
+    lazyLoad: true,
 };
 
 const slides = [
     {
-        imgSrc: '/images/header-bg.png',
+        imgSrc: '/images/header-bg.webp',
         alt: 'header-image1'
     },
     {
-        imgSrc: '/images/header-bg-1.png',
+        imgSrc: '/images/header-bg-1.webp',
         alt: 'header-image2'
     },
     {
-        imgSrc: '/images/header-bg.png',
+        imgSrc: '/images/header-bg.webp',
         alt: 'header-image3'
     },
     {
-        imgSrc: '/images/header-bg-1.png',
+        imgSrc: '/images/header-bg-1.webp',
         alt: 'header-image4'
     },
 ]

@@ -103,7 +103,7 @@ function App() {
             {/* Video Section */}
             <div className="new-collection">
                 <div dangerouslySetInnerHTML={{ __html: `
-                    <video height="350" loop muted autoplay playsinline>
+                    <video height="270" loop muted autoplay playsinline>
                         <source src="/images/autoplay.mp4" type="video/mp4" />
                     </video>
                 `}}>
@@ -222,7 +222,7 @@ function App() {
                     <form>
                         <input type="text" className="input-text" placeholder="Enter your email adress..." />
                         <a className="input-button">
-                            <img src="/images/button.png" />
+                            <img src="/images/button.webp" />
                         </a>
                     </form>
                 </ul>
@@ -233,7 +233,7 @@ function App() {
                 <div className="customer-support-text">Customer support</div>
                 <h6 className="customer-support-heading">How can we help you?</h6>
                 <div className="customer-support-image">
-                    <img src="/images/customer-support.png" />
+                    <img src="/images/customer-support.webp" />
                 </div>
                 <ul className="customer-support-list-holder">
                     <li>
@@ -254,19 +254,19 @@ function App() {
             <div className="saving-pets">
                 <h5 className="pets-heading">Saving pets together.</h5>
                 <div className="pets-image">
-                    <img src="/images/saving-pets.png" />
+                    <img src="/images/saving-pets.webp" />
                 </div>
                 <div className="saving-pets-text">
                     With each purchase, we will increase awareness of animal adoption. And we will donate money to save
                     animals around the world
                 </div>
-                <img className="numbers-image" src="/images/Numbers.png" />
+                <img className="numbers-image" src="/images/Numbers.webp" />
             </div>
 
             <div className="insta-posts">
                 <div className="insta-user-holder">
                     <div className="insta-logo-holder">
-                        <img src="/images/insta-logo.png" />
+                        <img src="/images/insta-logo.webp" />
                         <div className="name-text-holder">
                             <h6 className="brand-name">OHMYBRAND</h6>
                             <div className="brand-user-name">@ohmybrand_official</div>

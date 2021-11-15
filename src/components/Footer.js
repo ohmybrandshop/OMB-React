@@ -3,7 +3,7 @@ const Footer = () => {
         <div className="footer-section">
             <div className="see-more-button">
                 <a className="see-more" href="#">
-                    <img src="/images/see more.png" />
+                    <img src="/images/see more.webp" />
                 </a>
             </div>
             <div className="company-logo">
@@ -109,7 +109,7 @@ const Footer = () => {
                 <form>
                     <input type="text" className="input-text" placeholder="Enter your email adress..." />
                     <a className="input-button">
-                        <img src="/images/button.png" />
+                        <img src="/images/button.webp" />
                     </a>
                 </form>
             </ul>

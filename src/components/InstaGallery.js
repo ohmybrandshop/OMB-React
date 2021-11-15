@@ -11,15 +11,15 @@ const InstaGallery = () => {
 }
 
 const images = [
-    '/images/insta-post-1.png',
-    '/images/insta-post-2.png',
-    '/images/insta-post-3.png',
-    '/images/insta-post-4.png',
-    '/images/insta-post-5.png',
-    '/images/insta-post-6.png',
-    '/images/insta-post-7.png',
-    '/images/insta-post-8.png',
-    '/images/insta-post-9.png',
+    '/images/insta-post-1.webp',
+    '/images/insta-post-2.webp',
+    '/images/insta-post-3.webp',
+    '/images/insta-post-4.webp',
+    '/images/insta-post-5.webp',
+    '/images/insta-post-6.webp',
+    '/images/insta-post-7.webp',
+    '/images/insta-post-8.webp',
+    '/images/insta-post-9.webp',
 ]
 
 export default InstaGallery;

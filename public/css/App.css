@@ -105,6 +105,11 @@ img {
     display: none !important;
 }
 
+.OMB {
+    /*homepage css ends here*/
+    /*menu css starts from here*/
+    /*menu css ends here*/
+}
 .OMB .input-holder form {
     display: flex;
     justify-content: space-between;
@@ -180,7 +185,7 @@ img {
     text-transform: uppercase;
     font-size: 28px;
     text-align: center;
-    margin-bottom: 0px;
+    margin-bottom: 3px;
 }
 .OMB .banner-content-holder .banner-content .banner-heading .dot-color {
     font-size: 35px;
@@ -293,8 +298,8 @@ img {
 }
 .OMB .categories-holder .categories-slider-holder .categories-slider {
     /*.slick-list {
-          padding: 0 12% 0 0;
-        }*/
+            padding: 0 12% 0 0;
+          }*/
 }
 .OMB .categories-holder .categories-slider-holder .categories-slider .categories-content {
     text-align: center;
@@ -322,8 +327,8 @@ img {
     padding: 0 0 0 20px;
     margin-bottom: 35px;
     /*.slick-list {
-      padding: 0 4% 0 0;
-    }*/
+        padding: 0 4% 0 0;
+      }*/
 }
 .OMB .sale-holder .sale-content-holder {
     position: relative;
@@ -403,8 +408,8 @@ img {
 .OMB .new-arrival-holder .new-arrival-products-holder {
     padding-left: 18px;
     /*.slick-list {
-        padding: 0 12% 0 0;
-      }*/
+          padding: 0 12% 0 0;
+        }*/
 }
 .OMB .new-arrival-holder .new-arrival-products-holder .new-arrival-products .new-arrival-image {
     margin-right: 12px;
@@ -668,7 +673,6 @@ img {
 }
 .OMB .quality-slider-holder {
     padding-left: 20px;
-    margin-bottom: 50px;
 }
 .OMB .quality-slider-holder .quality-slider {
     display: flex !important;
@@ -1150,4 +1154,183 @@ img {
     max-width: 217px;
     margin: 0 auto;
     display: flex;
+}
+.OMB .menu-holder {
+    opacity: 0;
+    z-index: 1;
+    /* display: none; */ visibility: hidden;
+    transition: visibility 0s, opacity 1s linear;
+    position: fixed;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(21.7463px);
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    max-width: 355px;
+    transition: 0.3s ease;
+}
+.OMB .menu-holder .menu-content-holder {
+    background-image: url('../images/menu-bg.png');
+    background-size: cover;
+    background-position: bottom right;
+    height: 100%;
+    min-height: 248px;
+    position: relative;
+}
+.OMB .menu-holder .menu-content-holder .menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    max-width: 270px;
+    margin: 0 auto;
+}
+.OMB .menu-holder .menu-content-holder .menu-header .cross-icon img {
+    max-width: 14px;
+}
+.OMB .menu-holder .menu-content-holder .menu-header .menu-heading {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.OMB .menu-holder .menu-content-holder .menu-header .bag-icon img {
+    max-width: 15px;
+}
+.OMB .menu-holder .menu-content-holder .profile-pic {
+    position: absolute;
+    bottom: 0;
+    max-width: 100px;
+    height: auto;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 13%;
+}
+.OMB .menu-holder .user-details-holder {
+    margin-top: -15px;
+}
+.OMB .menu-holder .user-details-holder .user-details .user-name {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    color: #252426;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.OMB .menu-holder .user-details-holder .user-details .user-email {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(12, 13, 52, 0.5);
+}
+.OMB .menu-holder .user-details-holder .logout-details .button-link-list {
+    position: unset;
+}
+.OMB .menu-holder .user-details-holder .logout-details .button-link-list .button-link {
+    max-width: 190px;
+}
+.OMB .menu-holder .menu-items-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+.OMB .menu-holder .menu-items-holder .menu-items {
+    padding-bottom: 50px;
+}
+.OMB .menu-holder .menu-items-holder .menu-items:last-child {
+    padding-bottom: 0;
+}
+.OMB .menu-holder .menu-items-holder .menu-items .link {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.923077px;
+    color: #252426;
+    text-transform: uppercase;
+}
+.OMB .menu-holder .menu-btn-holder {
+    padding: 30px 0 60px;
+}
+.OMB .menu-holder .menu-btn-holder .logout-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 25px;
+}
+.OMB .menu-holder .menu-btn-holder .logout-btn .logout-icon {
+    max-width: 36px;
+    padding: 0 15px 0 0;
+}
+.OMB .menu-holder .menu-btn-holder .logout-btn .logout-link {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #252426;
+}
+.OMB .menu-holder .menu-btn-holder .login-btns {
+    display: flex;
+    justify-content: center;
+}
+.OMB .menu-holder .menu-btn-holder .login-btns .login-btn {
+    width: 100%;
+    max-width: 134px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 31px;
+    background: #fe5e33;
+    border-radius: 30px;
+}
+.OMB .menu-holder .menu-btn-holder .login-btns .login-btn.no-bg {
+    background-color: transparent;
+    max-width: 85px;
+}
+.OMB .menu-holder .menu-btn-holder .login-btns .login-btn.no-bg .btn {
+    color: #252426;
+}
+.OMB .menu-holder .menu-btn-holder .login-btns .login-btn .btn {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+}
+
+
+/* change waleed */
+.menu-holder {
+    max-height: 100%;
+    overflow: scroll;
+}
+
+
+/* Utility */
+.display-block {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+.lock-scroll {
+    overflow: hidden;
 }

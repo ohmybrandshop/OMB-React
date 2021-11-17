@@ -1,5 +1,6 @@
 // React Imports
 import { useState } from 'react';
+import classNames from 'classnames';
 // My Components Imports
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -14,10 +15,11 @@ import QualitySlider from './components/sliders/QualitySlider';
 import InstaGallery from './components/InstaGallery';
 
 function App() {
+
     const [bannerTextIsBlack, setBannerTextIsBlack] = useState(true);
 
     return (
-        <>
+        <div className={classNames('OMB')}>
             <Navbar />
 
             {/* Banner Section */}
@@ -103,7 +105,7 @@ function App() {
             {/* Video Section */}
             <div className="new-collection">
                 <div dangerouslySetInnerHTML={{ __html: `
-                    <video height="270" loop muted autoplay playsinline>
+                    <video height="406" loop muted autoplay playsinline>
                         <source src="/images/autoplay.mp4" type="video/mp4" />
                     </video>
                 `}}>
@@ -290,7 +292,7 @@ function App() {
             <InstaGallery />
 
             <Footer />
-        </>
+        </div>
     );
 }
 

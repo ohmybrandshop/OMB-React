@@ -5,7 +5,7 @@ const CategoriesSlider = () => {
         <Slider {...categorySliderSettings}>
             {slides.map((slides) => (
                 <div className="categories-content">
-                    <img src={slides.imgSrc} alt={slides.alt} />
+                    <img src={slides.imgSrc} alt={slides.alt} className={slides.className} />
                     <span className="category-text"> {slides.text} </span>
                 </div>
             ))}
@@ -21,35 +21,40 @@ const categorySliderSettings = {
     slidesToShow: 4,
     arrows:false,
     centerMode: true,
-    centerPadding:'20px 0 0',
+    centerPadding:'20px 0px 0px',
     lazyLoad: true,
 };
 
 const slides = [
     {
-        imgSrc: '/images/new-category.webp',
-        alt: 'new-category',
-        text: 'New In',
-    },
-    {
-        imgSrc: '/images/summer-category.webp',
-        alt: 'summer-category-alt',
-        text: 'Summer',
+        imgSrc: '/images/winter-category.webp',
+        alt: 'winter-category',
+        text: 'Winter',
+        className: ''
     },
     {
         imgSrc: '/images/outlet-category.webp',
         alt: 'outlet-category-alt',
         text: 'Pets',
+        className: ''
     },
     {
-        imgSrc: '/images/winter-category.webp',
-        alt: 'winter-category',
-        text: 'Winter',
+        imgSrc: '/images/summer.png',
+        alt: 'summer-category',
+        text: 'Summer',
+        className: 'last-image'
     },
     {
-        imgSrc: '/images/winter-category.webp',
-        alt: 'winter-category',
-        text: 'Winter',
+        imgSrc: '/images/new-category.webp',
+        alt: 'new-category',
+        text: 'New In',
+        className: ''   
+    },
+    {
+        imgSrc: '/images/summer-category.webp',
+        alt: 'summer-category-alt',
+        text: 'Kids',
+        className: ''
     },
 ];
 export default CategoriesSlider;

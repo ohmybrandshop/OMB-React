@@ -3,6 +3,15 @@ import Slider from 'react-slick';
 const SaleSlider = () => {
     return (
         <Slider className="sale-holder" {...saleSliderSettings}>
+            {christmasSlides.map((slide) => (
+                <div className="sale-content-holder">
+                    <div className="sale-image">
+                        <img src={slide.imgSrc} alt={slide.alt} />
+                    </div>
+                    <span className="type-text">{slide.text}</span>
+                </div>
+            ))}
+
             {saleSlides.map((slide) => (
                 <div className="sale-content-holder">
                     <div className="sale-image">
@@ -17,14 +26,6 @@ const SaleSlider = () => {
                     <span className="type-text">{slide.text}</span>
                 </div>
             ))}
-            {christmasSlides.map((slide) => (
-                <div className="sale-content-holder">
-                    <div className="sale-image">
-                        <img src={slide.imgSrc} alt={slide.alt} />
-                    </div>
-                    <span className="type-text">{slide.text}</span>
-                </div>
-            ))}
         </Slider>
     );
 };
@@ -35,9 +36,9 @@ const saleSliderSettings = {
     speed: 300,
     slidesToScroll: 1,
     slidesToShow: 1,
-    arrows:false,
+    arrows: false,
     centerMode: true,
-    centerPadding:'10px 0 0',
+    centerPadding: '10px 0 0',
     lazyLoad: true,
 };
 
@@ -56,15 +57,15 @@ const saleSlides = [
 
 const christmasSlides = [
     {
-        imgSrc: '/images/christmas-sale.webp',
-        alt: 'christmas_sale',
-        text: 'Christmas',
-    },
-    {
         imgSrc: '/images/christmas-sale-1.webp',
         alt: 'christmas_sale_1',
         text: 'Christmas',
     },
+    // {
+    //     imgSrc: '/images/christmas-sale.webp',
+    //     alt: 'christmas_sale',
+    //     text: 'Christmas',
+    // },
 ];
 
 export default SaleSlider;

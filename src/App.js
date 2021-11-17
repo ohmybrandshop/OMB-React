@@ -25,6 +25,9 @@ function App() {
             {/* Banner Section */}
             <div className="banner-content-holder">
                 <BannerSlider setBannerTextIsBlack={setBannerTextIsBlack} />
+                <div className="curve-image">
+                    <img src="/images/header-curve.png" />
+                </div>
                 <div className="banner-content">
                     <h1 className="banner-heading" style={{ color: bannerTextIsBlack ? '#000' : '#fff' }}>
                         Custom PJ's With Your Pet Character<span className="dot-color">.</span>
@@ -70,10 +73,10 @@ function App() {
                 </ul>
             </div>
 
-            {/* Categories Section */}
+            {/* Catalog Section */}
             <div className="categories-holder">
                 <div className="categories-header-holder">
-                    <h5 className="categories-header">Categories</h5>
+                    <h5 className="categories-header">Catalog</h5>
                     <div className="swipe-right">
                         <a href="#" className="bold">
                             Swipe right-left

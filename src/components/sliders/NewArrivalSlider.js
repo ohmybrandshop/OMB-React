@@ -41,19 +41,19 @@ const slides = [
     {
         imgSrc: '/images/new-arrival.webp',
         alt: 'new-arrival',
-        productName: 'Longie Sleeve',
-        productPrice: '12',
-    },
-    {
-        imgSrc: '/images/new-arrival-1.webp',
-        alt: 'new_arrival_1',
         productName: 'Yellow Beret',
         productPrice: '12',
     },
     {
         imgSrc: '/images/new-arrival-1.webp',
-        alt: 'new_arrival_long_sleeves',
-        productName: 'Long Sleeves',
+        alt: 'new_arrival_1',
+        productName: 'Longie Sleeve',
+        productPrice: '12',   
+    },
+    {
+        imgSrc: '/images/new-arrival-2.png',
+        alt: 'new-arrival-1',
+        productName: 'Pink Harness',
         productPrice: '12',
     },
 ];

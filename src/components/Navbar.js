@@ -30,7 +30,7 @@ const Navbar = () => {
             </div>
 
             {/* Side Menu */}
-            <div className={classNames('menu-holder', sideMenuIsOpen ? 'display-block' : undefined)}>
+            <div className={classNames('menu-holder', sideMenuIsOpen ? 'visible' : undefined)}>
                 <div className="menu-content-holder">
                     <div className="menu-header">
                         <span

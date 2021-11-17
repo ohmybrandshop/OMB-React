@@ -77,7 +77,7 @@ img {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.05));
 }
 .button-link-list .button-link .btn {
     font-family: 'SF Pro Display';
@@ -88,6 +88,7 @@ img {
 
 .slick-dots {
     bottom: 0 !important;
+    z-index: 999;
 }
 .slick-dots li {
     width: 8px !important;
@@ -172,6 +173,17 @@ img {
 .OMB .banner-content-holder {
     position: relative;
 }
+.OMB .banner-content-holder .slider-image {
+    background: #edeef3;
+}
+.OMB .banner-content-holder .slider-image .header-special-image {
+    margin-top: 85px;
+}
+.OMB .banner-content-holder .curve-image {
+    position: absolute;
+    bottom: -125px;
+    width: 100%;
+}
 .OMB .banner-content-holder .banner-content {
     position: absolute;
     display: flex;
@@ -198,6 +210,10 @@ img {
     letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
+}
+.OMB .fashion-part {
+    position: relative;
+    z-index: 9;
 }
 .OMB .fashion-part .fashion-heading {
     font-family: 'Poppins', sans-serif;
@@ -234,11 +250,11 @@ img {
     width: 100%;
     height: 100%;
     left: -1.5%;
-    max-width: 70px;
-    min-height: 84px;
+    max-width: 74px;
+    min-height: 88px;
     background-color: #fff;
     max-height: 84px;
-    box-shadow: 0px 0.688181px 5.16136px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0 2.16136px rgba(0, 0, 0, 0.1);
     border-radius: 5.53934px;
 }
 .OMB .products-holder {
@@ -272,7 +288,7 @@ img {
 }
 .OMB .products-holder .button-link-list {
     position: unset;
-    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.05));
 }
 .OMB .categories-holder {
     margin-bottom: 35px;
@@ -305,9 +321,7 @@ img {
     text-align: center;
 }
 .OMB .categories-holder .categories-slider-holder .categories-slider .categories-content .last-image {
-    max-width: 32px;
     min-height: 69px;
-    max-height: 69px;
 }
 .OMB .categories-holder .categories-slider-holder .categories-slider .categories-content img {
     max-width: 67px;
@@ -414,6 +428,9 @@ img {
 .OMB .new-arrival-holder .new-arrival-products-holder .new-arrival-products .new-arrival-image {
     margin-right: 12px;
     margin-bottom: 10px;
+}
+.OMB .new-arrival-holder .new-arrival-products-holder .new-arrival-products .new-arrival-image img {
+    border-radius: 15px;
 }
 .OMB .new-arrival-holder .new-arrival-products-holder .new-arrival-products .products-text-holder {
     display: flex;
@@ -1156,9 +1173,11 @@ img {
     display: flex;
 }
 .OMB .menu-holder {
+    max-height: 100%;
+    overflow: scroll;
     opacity: 0;
-    z-index: 1;
-    /* display: none; */ visibility: hidden;
+    z-index: 1000;
+    visibility: hidden;
     transition: visibility 0s, opacity 1s linear;
     position: fixed;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
@@ -1170,7 +1189,7 @@ img {
     transition: 0.3s ease;
 }
 .OMB .menu-holder .menu-content-holder {
-    background-image: url('../images/menu-bg.png');
+    background-image: url(../images/menu-bg.png);
     background-size: cover;
     background-position: bottom right;
     height: 100%;
@@ -1318,19 +1337,11 @@ img {
     color: #ffffff;
 }
 
-
-/* change waleed */
-.menu-holder {
-    max-height: 100%;
-    overflow: scroll;
-}
-
-
-/* Utility */
-.display-block {
+.visible {
     visibility: visible !important;
     opacity: 1 !important;
 }
+
 .lock-scroll {
     overflow: hidden;
 }

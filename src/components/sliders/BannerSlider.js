@@ -5,12 +5,12 @@ const BannerSlider = (props) => {
         <Slider className="slider-image"
             {...bannerSettings}
             afterChange={(index) => {
-                if (index === 1 || index === 3) props.setBannerTextIsBlack(false);
+                if (index === 2) props.setBannerTextIsBlack(false);
                 else props.setBannerTextIsBlack(true);
             }}
         >
             {slides.map(slide => (
-                <img src={slide.imgSrc} alt={slide.imgSrc} />
+                <img src={slide.imgSrc} alt={slide.imgSrc} className={slide.className} />
             ))}
         </Slider>
     );
@@ -23,26 +23,24 @@ const bannerSettings = {
     slidesToScroll: 1,
     slidesToShow: 1,
     arrows:false,
-    lazyLoad: true,
 };
 
 const slides = [
     {
-        imgSrc: '/images/header-bg.webp',
-        alt: 'header-image1'
+        imgSrc: '/images/header-bg-2.png',
+        alt: 'header-image3',
+        className: 'header-special-image'
     },
     {
-        imgSrc: '/images/header-bg-1.webp',
-        alt: 'header-image2'
+        imgSrc: '/images/header-bg.png',
+        alt: 'header-image1',
+        className: ''
     },
     {
-        imgSrc: '/images/header-bg.webp',
-        alt: 'header-image3'
-    },
-    {
-        imgSrc: '/images/header-bg-1.webp',
-        alt: 'header-image4'
-    },
+        imgSrc: '/images/header-bg-1.png',
+        alt: 'header-image2',
+        className: ''
+    }
 ]
 
 export default BannerSlider;

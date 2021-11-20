@@ -1,1347 +1,1724 @@
 @font-face {
-    font-family: 'League Spartan';
-    src: url('../fonts/LeagueSpartan-Bold.woff2') format('woff2'),
-        url('../fonts/LeagueSpartan-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "League Spartan";
+  src: url("../fonts/LeagueSpartan-Bold.woff2") format("woff2"), url("../fonts/LeagueSpartan-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
-    font-family: 'Neue Einstellung';
-    src: url('../fonts/NeueEinstellung-Bold.woff2') format('woff2'),
-        url('../fonts/NeueEinstellung-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Neue Einstellung";
+  src: url("../fonts/NeueEinstellung-Bold.woff2") format("woff2"), url("../fonts/NeueEinstellung-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
-    font-family: 'SF Pro Display';
-    src: url('../fonts/SFProDisplay-Bold.woff2') format('woff2'), url('../fonts/SFProDisplay-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "SF Pro Display";
+  src: url("../fonts/SFProDisplay-Bold.woff2") format("woff2"), url("../fonts/SFProDisplay-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
-    font-family: 'SF Pro Display';
-    src: url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
-        url('../fonts/SFProDisplay-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "SF Pro Display";
+  src: url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
-    font-family: 'SF Pro Display';
-    src: url('../fonts/SFProDisplay-Medium.woff2') format('woff2'),
-        url('../fonts/SFProDisplay-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: "SF Pro Display";
+  src: url("../fonts/SFProDisplay-Medium.woff2") format("woff2"), url("../fonts/SFProDisplay-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
-    cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 li {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .button-link-list {
-    position: absolute;
-    width: 100%;
-    bottom: 14.5%;
+  position: absolute;
+  width: 100%;
+  bottom: 14.5%;
 }
 .button-link-list .button-link {
-    background: #fe5e33;
-    max-width: 260px;
-    display: flex;
-    height: 50px;
-    border-radius: 25px;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.05));
+  background: #fe5e33;
+  max-width: 260px;
+  display: flex;
+  height: 50px;
+  border-radius: 25px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.05));
 }
 .button-link-list .button-link .btn {
-    font-family: 'SF Pro Display';
-    font-size: 15px;
-    color: #fff;
-    text-align: center;
+  font-family: "SF Pro Display";
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
 }
 
 .slick-dots {
-    bottom: 0 !important;
-    z-index: 999;
+  bottom: 0 !important;
+  z-index: 999;
 }
 .slick-dots li {
-    width: 8px !important;
-    height: 8px !important;
-    border-radius: 100%;
-    margin: 0 9px;
-    background: rgba(12, 13, 52, 0.3);
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 100%;
+  margin: 0 9px;
+  background: rgba(12, 13, 52, 0.3);
 }
 .slick-dots li.slick-active {
-    width: 10px !important;
-    height: 10px !important;
-    background: #fe5e33;
+  width: 10px !important;
+  height: 10px !important;
+  background: #fe5e33;
 }
 .slick-dots li button {
-    display: none !important;
+  display: none !important;
 }
 
 .OMB {
-    /*homepage css ends here*/
-    /*menu css starts from here*/
-    /*menu css ends here*/
+  /*homepage css ends here*/
+  /*menu css starts from here*/
+  /*menu css ends here*/
+  /*catalog page css starts from here*/
 }
 .OMB .input-holder form {
-    display: flex;
-    justify-content: space-between;
-    max-width: 262px;
-    margin: 0 auto;
-    background: #fff;
-    border-radius: 73px;
-    padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 262px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 73px;
+  padding: 5px 10px;
 }
 .OMB .input-holder form .input-text {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 11px;
-    line-height: 180%;
-    color: #bbbbbb;
-    border: 0;
-    background: none;
-    outline: 0;
-    padding-left: 20px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 180%;
+  color: #bbbbbb;
+  border: 0;
+  background: none;
+  outline: 0;
+  padding-left: 20px;
 }
 .OMB .input-holder form .input-button {
-    max-width: 42px;
-    max-height: 38px;
+  max-width: 42px;
+  max-height: 38px;
 }
 .OMB .swipe-right {
-    font-family: 'SF Pro Display';
-    font-weight: normal;
-    font-size: 10px;
-    line-height: 24px;
-    color: #0c0d34;
+  font-family: "SF Pro Display";
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 24px;
+  color: #0c0d34;
 }
 .OMB .swipe-right .bold {
-    font-weight: 600;
-    color: #0c0d34;
+  font-weight: 600;
+  color: #0c0d34;
 }
 .OMB .navbar {
-    background: #edeef3;
-    display: flex;
-    justify-content: space-around;
-    padding: 25px 0;
+  background: #edeef3;
+  display: flex;
+  justify-content: space-around;
+  padding: 25px 0;
 }
 .OMB .navbar .text-holder {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .OMB .navbar .text-holder .nav-text {
-    font-family: 'Poppins', sans-serif;
-    color: #252426;
-    text-transform: uppercase;
-    font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: #252426;
+  text-transform: uppercase;
+  font-size: 18px;
 }
 .OMB .navbar .icons-holder {
-    display: flex;
+  display: flex;
 }
 .OMB .navbar .icons-holder .account {
-    padding-right: 12px;
+  padding-right: 12px;
 }
 .OMB .banner-content-holder {
-    position: relative;
+  position: relative;
 }
 .OMB .banner-content-holder .slider-image {
-    background: #edeef3;
+  background: #edeef3;
 }
 .OMB .banner-content-holder .slider-image .header-special-image {
-    margin-top: 85px;
+  margin-top: 85px;
 }
 .OMB .banner-content-holder .curve-image {
-    position: absolute;
-    bottom: -125px;
-    width: 100%;
+  position: absolute;
+  bottom: -125px;
+  width: 100%;
 }
 .OMB .banner-content-holder .banner-content {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    top: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
 }
 .OMB .banner-content-holder .banner-content .banner-heading {
-    font-family: 'League Spartan';
-    text-transform: uppercase;
-    font-size: 28px;
-    text-align: center;
-    margin-bottom: 3px;
+  font-family: "League Spartan";
+  text-transform: uppercase;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 3px;
 }
 .OMB .banner-content-holder .banner-content .banner-heading .dot-color {
-    font-size: 35px;
-    color: #fc4b15;
+  font-size: 35px;
+  color: #fc4b15;
 }
 .OMB .banner-content-holder .banner-content .banner-text {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
 }
 .OMB .fashion-part {
-    position: relative;
-    z-index: 9;
+  position: relative;
+  z-index: 9;
 }
 .OMB .fashion-part .fashion-heading {
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: center;
-    letter-spacing: -1.5px;
-    color: #0c0d34;
-    max-width: 265px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -1.5px;
+  color: #0c0d34;
+  max-width: 265px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 .OMB .fashion-part .fashion-text {
-    font-family: 'SF Pro Display';
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    color: rgba(12, 13, 52, 0.7);
-    max-width: 315px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+  font-family: "SF Pro Display";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(12, 13, 52, 0.7);
+  max-width: 315px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 .OMB .fashion-part .side-image {
-    margin: 0 15px 50px;
-    position: relative;
+  margin: 0 15px 50px;
+  position: relative;
 }
 .OMB .fashion-part .side-image img {
-    border-radius: 5%;
+  border-radius: 5%;
 }
 .OMB .fashion-part .side-image .child-image {
-    position: absolute;
-    bottom: -24px;
-    width: 100%;
-    height: 100%;
-    left: -1.5%;
-    max-width: 74px;
-    min-height: 88px;
-    background-color: #fff;
-    max-height: 84px;
-    box-shadow: 0px 0 2.16136px rgba(0, 0, 0, 0.1);
-    border-radius: 5.53934px;
+  position: absolute;
+  bottom: -24px;
+  width: 100%;
+  height: 100%;
+  left: -1.5%;
+  max-width: 74px;
+  min-height: 88px;
+  background-color: #fff;
+  max-height: 84px;
+  box-shadow: 0px 0 2.16136px rgba(0, 0, 0, 0.1);
+  border-radius: 5.53934px;
 }
 .OMB .products-holder {
-    padding: 0 12px;
-    margin-top: -23px;
-    margin-bottom: 40px;
+  padding: 0 12px;
+  margin-top: -23px;
+  margin-bottom: 40px;
 }
 .OMB .products-holder .products-content-holder {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 .OMB .products-holder .products-content-holder .products-content {
-    text-align: center;
-    padding: 0 10px;
+  text-align: center;
+  padding: 0 10px;
 }
 .OMB .products-holder .products-content-holder .products-content img {
-    background: transparent;
-    margin-bottom: 5px;
+  background: transparent;
+  margin-bottom: 5px;
 }
 .OMB .products-holder .products-content-holder .products-content .products-text {
-    font-family: 'SF Pro Display';
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.6px;
-    text-align: center;
-    color: #0c0d34;
-    text-align: center;
+  font-family: "SF Pro Display";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.6px;
+  text-align: center;
+  color: #0c0d34;
+  text-align: center;
 }
 .OMB .products-holder .products-content-holder .products-content .products-text .orange-text {
-    color: #fe5e33;
+  color: #fe5e33;
 }
 .OMB .products-holder .button-link-list {
-    position: unset;
-    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.05));
+  position: unset;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.05));
 }
 .OMB .categories-holder {
-    margin-bottom: 35px;
+  margin-bottom: 35px;
 }
 .OMB .categories-holder .categories-header-holder {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-bottom: 20px;
 }
 .OMB .categories-holder .categories-header-holder .categories-header {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 27px;
-    text-align: center;
-    letter-spacing: 0.275px;
-    color: #323643;
-    margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 0.275px;
+  color: #323643;
+  margin: 0;
 }
 .OMB .categories-holder .categories-slider-holder {
-    padding: 0 0 0 20px;
+  padding: 0 0 0 20px;
 }
 .OMB .categories-holder .categories-slider-holder .categories-slider {
-    /*.slick-list {
-            padding: 0 12% 0 0;
-          }*/
-}
-.OMB .categories-holder .categories-slider-holder .categories-slider .categories-content {
-    text-align: center;
-}
-.OMB .categories-holder .categories-slider-holder .categories-slider .categories-content .last-image {
-    min-height: 69px;
-}
-.OMB .categories-holder .categories-slider-holder .categories-slider .categories-content img {
-    max-width: 67px;
-    margin: 0 auto;
-}
-.OMB .categories-holder .categories-slider-holder .categories-slider .categories-content .category-text {
-    font-family: 'SF Pro Display';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    text-align: center;
-    text-transform: capitalize;
-    color: #0c0d34;
-}
-.OMB .sale-holder {
-    padding: 0 0 0 20px;
-    margin-bottom: 35px;
-    /*.slick-list {
-        padding: 0 4% 0 0;
+  /*.slick-list {
+        padding: 0 12% 0 0;
       }*/
 }
+.OMB .categories-holder .categories-slider-holder .categories-slider .categories-content {
+  text-align: center;
+}
+.OMB .categories-holder .categories-slider-holder .categories-slider .categories-content .last-image {
+  min-height: 69px;
+}
+.OMB .categories-holder .categories-slider-holder .categories-slider .categories-content img {
+  max-width: 67px;
+  margin: 0 auto;
+}
+.OMB .categories-holder .categories-slider-holder .categories-slider .categories-content .category-text {
+  font-family: "SF Pro Display";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #0c0d34;
+}
+.OMB .sale-holder {
+  padding: 0 0 0 20px;
+  margin-bottom: 35px;
+  /*.slick-list {
+      padding: 0 4% 0 0;
+    }*/
+}
 .OMB .sale-holder .sale-content-holder {
-    position: relative;
+  position: relative;
 }
 .OMB .sale-holder .sale-content-holder .sale-image {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 .OMB .sale-holder .sale-content-holder .off-text {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: #ffffff;
-    background: #fe5e33;
-    border-radius: 25px;
-    position: absolute;
-    top: 10%;
-    left: 7%;
-    display: flex;
-    align-items: center;
-    max-width: 103px;
-    width: 100%;
-    justify-content: center;
-    padding: 4px 0;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #fe5e33;
+  border-radius: 25px;
+  position: absolute;
+  top: 10%;
+  left: 7%;
+  display: flex;
+  align-items: center;
+  max-width: 103px;
+  width: 100%;
+  justify-content: center;
+  padding: 4px 0;
 }
 .OMB .sale-holder .sale-content-holder .off-text .fire-icon {
-    padding-right: 2px;
+  padding-right: 2px;
 }
 .OMB .sale-holder .sale-content-holder .off-text .fire-icon img {
-    width: 8px;
-    height: 8px;
+  width: 8px;
+  height: 8px;
 }
 .OMB .sale-holder .sale-content-holder .type-text {
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 26px;
-    letter-spacing: 2.275px;
-    text-transform: capitalize;
-    color: #ffffff;
-    position: absolute;
-    bottom: 19%;
-    left: 7%;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 2.275px;
+  text-transform: capitalize;
+  color: #ffffff;
+  position: absolute;
+  bottom: 19%;
+  left: 7%;
 }
 .OMB .new-arrival-holder {
-    margin-bottom: 45px;
+  margin-bottom: 45px;
 }
 .OMB .new-arrival-holder .new-arrival-heading-holder {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 15px;
 }
 .OMB .new-arrival-holder .new-arrival-heading-holder .new-arrival-heading {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 27px;
-    letter-spacing: 0.275px;
-    color: #323643;
-    margin: 0;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.275px;
+  color: #323643;
+  margin: 0;
 }
 .OMB .new-arrival-holder .new-arrival-heading-holder .view-all {
-    font-family: SF Pro Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 24px;
-    text-align: center;
-    color: #0c0d34;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  color: #0c0d34;
 }
 .OMB .new-arrival-holder .new-arrival-products-holder {
-    padding-left: 18px;
-    /*.slick-list {
-          padding: 0 12% 0 0;
-        }*/
+  padding-left: 18px;
+  /*.slick-list {
+       padding: 0 12% 0 0;
+     }*/
 }
 .OMB .new-arrival-holder .new-arrival-products-holder .new-arrival-products .new-arrival-image {
-    margin-right: 12px;
-    margin-bottom: 10px;
+  margin-right: 12px;
+  margin-bottom: 10px;
 }
 .OMB .new-arrival-holder .new-arrival-products-holder .new-arrival-products .new-arrival-image img {
-    border-radius: 15px;
+  border-radius: 15px;
 }
 .OMB .new-arrival-holder .new-arrival-products-holder .new-arrival-products .products-text-holder {
-    display: flex;
-    flex-direction: column;
-    margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
 }
 .OMB .new-arrival-holder .new-arrival-products-holder .new-arrival-products .products-text-holder .product-heading {
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: #333333;
-    margin: 0;
-    margin-bottom: 8px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #333333;
+  margin: 0;
+  margin-bottom: 8px;
 }
 .OMB .new-arrival-holder .new-arrival-products-holder .new-arrival-products .products-text-holder .product-price {
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.923077px;
-    color: #323643;
-    margin-bottom: 8px;
-    display: block;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.923077px;
+  color: #323643;
+  margin-bottom: 8px;
+  display: block;
 }
 .OMB .new-arrival-holder .new-arrival-products-holder .new-arrival-products .products-text-holder .button-link-list {
-    position: unset;
+  position: unset;
 }
-.OMB
-    .new-arrival-holder
-    .new-arrival-products-holder
-    .new-arrival-products
-    .products-text-holder
-    .button-link-list
-    .button-link {
-    max-width: 134px;
-    height: 31px;
+.OMB .new-arrival-holder .new-arrival-products-holder .new-arrival-products .products-text-holder .button-link-list .button-link {
+  max-width: 134px;
+  height: 31px;
 }
-.OMB
-    .new-arrival-holder
-    .new-arrival-products-holder
-    .new-arrival-products
-    .products-text-holder
-    .button-link-list
-    .button-link
-    .btn {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 10px;
-    line-height: 15px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+.OMB .new-arrival-holder .new-arrival-products-holder .new-arrival-products .products-text-holder .button-link-list .button-link .btn {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .OMB .new-collection {
-    margin-bottom: 25px;
-    position: relative;
+  margin-bottom: 25px;
+  position: relative;
 }
 .OMB .new-collection video {
-    object-fit: fill;
-    width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  width: 100%;
 }
 .OMB .new-collection .button-link-list {
-    bottom: 17.5%;
+  bottom: 17.5%;
 }
 .OMB .new-collection .button-link-list .button-link {
-    max-width: 134px;
-    height: 31px;
+  max-width: 134px;
+  height: 31px;
 }
 .OMB .new-collection .button-link-list .button-link .btn {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 10px;
-    line-height: 15px;
-    text-align: center;
-    letter-spacing: 0.08em;
-    color: #ffffff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: #ffffff;
 }
 .OMB .information-holder {
-    display: flex;
+  display: flex;
 }
 .OMB .information-holder .info-content-holder {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 33.3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 33.3%;
 }
 .OMB .information-holder .info-content-holder img {
-    max-width: 32px;
-    min-height: 26px;
-    max-height: 26px;
-    margin: 0 auto;
-    margin-bottom: 6px;
+  max-width: 32px;
+  min-height: 26px;
+  max-height: 26px;
+  margin: 0 auto;
+  margin-bottom: 6px;
 }
 .OMB .information-holder .info-content-holder .info-content-heading {
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-align: center;
-    color: #0c0d34;
-    max-width: 90px;
-    margin-bottom: 9px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #0c0d34;
+  max-width: 90px;
+  margin-bottom: 9px;
 }
 .OMB .information-holder .info-content-holder .info-content-text {
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 9px;
-    line-height: 10px;
-    text-align: center;
-    color: #000000;
-    max-width: 107px;
-    min-height: 19.2px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 9px;
+  line-height: 10px;
+  text-align: center;
+  color: #000000;
+  max-width: 107px;
+  min-height: 19.2px;
 }
 .OMB .divider {
-    height: 1px;
-    width: 100%;
-    background: #e2e6ec;
-    margin: 0 auto;
-    margin-top: 25px;
-    margin-bottom: 42px;
-    max-width: 380px;
+  height: 1px;
+  width: 100%;
+  background: #e2e6ec;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 42px;
+  max-width: 380px;
 }
 .OMB .design-prefer .heading {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: center;
-    letter-spacing: -1.5px;
-    color: #0c0d34;
-    margin: 0;
-    margin-bottom: 14px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -1.5px;
+  color: #0c0d34;
+  margin: 0;
+  margin-bottom: 14px;
 }
 .OMB .design-prefer .design-text {
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: 0.342857px;
-    color: rgba(12, 13, 52, 0.5);
-    max-width: 330px;
-    margin: 0 auto;
-    margin-bottom: 30px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.342857px;
+  color: rgba(12, 13, 52, 0.5);
+  max-width: 330px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 .OMB .design-prefer .design-prefer-holder.slick-slider {
-    margin-bottom: 0 !important;
+  margin-bottom: 0 !important;
 }
 .OMB .design-prefer .design-prefer-holder .slick-prev {
-    z-index: 999;
-    top: 80.5%;
-    left: 32%;
-    background: transparent;
+  z-index: 999;
+  top: 80.5%;
+  left: 32%;
+  background: transparent;
 }
 .OMB .design-prefer .design-prefer-holder .slick-prev::before {
-    content: url('../images/icon-previous.svg');
+  content: url("../images/icon-previous.svg");
 }
 .OMB .design-prefer .design-prefer-holder .slick-next {
-    z-index: 999;
-    right: 32%;
-    background: transparent;
-    top: 80.5%;
-    bottom: 0;
+  z-index: 999;
+  right: 32%;
+  background: transparent;
+  top: 80.5%;
+  bottom: 0;
 }
 .OMB .design-prefer .design-prefer-holder .slick-next::before {
-    content: url('../images/icon-next.svg');
+  content: url("../images/icon-next.svg");
 }
 .OMB .design-prefer .design-prefer-holder .vertical-dots {
-    position: absolute;
-    top: 30%;
-    left: 10%;
+  position: absolute;
+  top: 30%;
+  left: 10%;
 }
 .OMB .design-prefer .design-prefer-holder .vertical-dots .slick-active {
-    width: 6px;
-    height: 6px;
-    background: #0c0d34;
+  width: 6px;
+  height: 6px;
+  background: #0c0d34;
 }
 .OMB .design-prefer .design-prefer-holder .vertical-dots li {
-    width: 4px;
-    height: 4px;
-    border-radius: 100%;
-    background: rgba(12, 13, 52, 0.3);
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background: rgba(12, 13, 52, 0.3);
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .OMB .design-prefer .design-prefer-holder .vertical-dots li button {
-    display: none;
+  display: none;
 }
 .OMB .design-prefer .design-prefer-holder .design-prefer-slider {
-    position: relative;
+  position: relative;
 }
 .OMB .design-prefer .design-prefer-holder .design-prefer-slider .user-logos {
-    position: absolute;
-    right: 5%;
-    top: 3%;
+  position: absolute;
+  right: 5%;
+  top: 3%;
 }
 .OMB .design-prefer .design-prefer-holder .design-prefer-slider .user-logos img {
-    max-width: 75px;
+  max-width: 75px;
 }
 .OMB .design-prefer .design-prefer-holder .design-prefer-slider .arrows-bg {
-    position: absolute;
-    bottom: 15%;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 200px;
-    margin: 0 auto;
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 200px;
+  margin: 0 auto;
 }
 .OMB .design-prefer .design-prefer-holder .design-prefer-slider .arrows-bg .share-bg {
-    left: 47%;
-    position: absolute;
-    top: 30%;
+  left: 47%;
+  position: absolute;
+  top: 30%;
 }
 .OMB .design-prefer .design-prefer-holder .design-prefer-slider .add-icon {
-    max-width: 50px;
-    position: absolute;
-    top: 32%;
-    right: 65px;
+  max-width: 50px;
+  position: absolute;
+  top: 32%;
+  right: 65px;
 }
 .OMB .design-prefer .design-prefer-holder .design-prefer-slider .add-icon.icon-2 {
-    top: 62%;
-    right: 140px;
+  top: 62%;
+  right: 140px;
 }
 .OMB .design-prefer .design-prefer-holder .design-prefer-slider .add-icon.icon-3 {
-    top: 51%;
-    left: 105px;
+  top: 51%;
+  left: 105px;
 }
 .OMB .design-prefer .design-prefer-holder .design-prefer-slider .user-text {
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 10px;
-    text-align: center;
-    color: #0c0d34;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 10px;
+  text-align: center;
+  color: #0c0d34;
 }
 .OMB .design-prefer .social-image {
-    max-width: 242px;
-    margin: 0 auto;
-    margin-top: -40px;
-    position: relative;
-    margin-bottom: 40px;
+  max-width: 242px;
+  margin: 0 auto;
+  margin-top: -40px;
+  position: relative;
+  margin-bottom: 40px;
 }
 .OMB .quality-slider-holder {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 .OMB .quality-slider-holder .quality-slider {
-    display: flex !important;
-    align-items: center;
-    background: #f9f9f9;
-    padding: 10px;
-    border-radius: 4px;
-    max-width: 310px;
+  display: flex !important;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 4px;
+  max-width: 310px;
 }
 .OMB .quality-slider-holder .quality-slider .quality-icon {
-    max-width: 60px;
+  max-width: 60px;
 }
 .OMB .quality-slider-holder .quality-slider .quality-content-holder {
-    padding-left: 15px;
+  padding-left: 15px;
 }
 .OMB .quality-slider-holder .quality-slider .quality-content-holder .quality-heading {
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    color: #0c0d34;
-    margin: 0;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0c0d34;
+  margin: 0;
 }
 .OMB .quality-slider-holder .quality-slider .quality-content-holder .quality-text {
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    color: rgba(12, 13, 52, 0.5);
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(12, 13, 52, 0.5);
 }
 .OMB .how-it-works .how-it-works-heading {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 30px;
-    text-align: center;
-    letter-spacing: -1.5px;
-    color: #0c0d34;
-    margin: 0;
-    margin-bottom: 20px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -1.5px;
+  color: #0c0d34;
+  margin: 0;
+  margin-bottom: 20px;
 }
 .OMB .how-it-works .hiw-content-holder {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .OMB .how-it-works .hiw-content-holder .hiw-image {
-    max-width: 229px;
-    margin-bottom: 10px;
+  max-width: 229px;
+  margin-bottom: 10px;
 }
 .OMB .how-it-works .hiw-content-holder .hiw-heading {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: center;
-    letter-spacing: -1.5px;
-    color: #0c0d34;
-    margin-bottom: 3px;
-    max-width: 245px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -1.5px;
+  color: #0c0d34;
+  margin-bottom: 3px;
+  max-width: 245px;
 }
 .OMB .how-it-works .hiw-content-holder .hiw-text {
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: 0.342857px;
-    color: rgba(12, 13, 52, 0.7);
-    max-width: 290px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.342857px;
+  color: rgba(12, 13, 52, 0.7);
+  max-width: 290px;
 }
 .OMB .how-it-works .hiw-arrow {
-    max-width: 36px;
-    margin: 0 auto;
-    margin-bottom: 17px;
-    margin-top: 17px;
+  max-width: 36px;
+  margin: 0 auto;
+  margin-bottom: 17px;
+  margin-top: 17px;
 }
 .OMB .how-it-works .button-link-list {
-    position: unset;
-    margin-top: 25px;
-    margin-bottom: 70px;
+  position: unset;
+  margin-top: 25px;
+  margin-bottom: 70px;
 }
 .OMB .reviews-holder {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 .OMB .reviews-holder .reviews-heading {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: center;
-    letter-spacing: -1.5px;
-    color: #0c0d34;
-    margin: 0 auto;
-    max-width: 218px;
-    margin-bottom: 8px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -1.5px;
+  color: #0c0d34;
+  margin: 0 auto;
+  max-width: 218px;
+  margin-bottom: 8px;
 }
 .OMB .reviews-holder .reviews-text {
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: 0.342857px;
-    color: rgba(12, 13, 52, 0.5);
-    max-width: 219px;
-    margin: 0 auto;
-    margin-bottom: 25px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.342857px;
+  color: rgba(12, 13, 52, 0.5);
+  max-width: 219px;
+  margin: 0 auto;
+  margin-bottom: 25px;
 }
 .OMB .reviews-holder .reviews-silder .slick-slide {
-    transform: scale(0.7);
+  transform: scale(0.7);
 }
 .OMB .reviews-holder .reviews-silder .slick-slide.slick-active {
-    transform: scale(1);
+  transform: scale(1);
 }
 .OMB .reviews-holder .reviews-silder .reviews-slider-content-holder {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 .OMB .reviews-holder .reviews-silder .reviews-slider-content-holder .review-slider-content {
-    position: relative;
+  position: relative;
 }
 .OMB .reviews-holder .reviews-silder .reviews-slider-content-holder .review-slider-content .checkmark {
-    max-width: 45px;
-    position: absolute;
-    right: 9px;
-    top: 10px;
+  max-width: 45px;
+  position: absolute;
+  right: 9px;
+  top: 10px;
 }
 .OMB .reviews-holder .swipe-right {
-    font-size: 14px;
-    text-align: center;
+  font-size: 14px;
+  text-align: center;
 }
 .OMB .newsletter {
-    background: #fafafa;
-    border-radius: 43px;
-    padding: 50px 0;
-    margin-bottom: 55px;
+  background: #fafafa;
+  border-radius: 43px;
+  padding: 50px 0;
+  margin-bottom: 55px;
 }
 .OMB .newsletter .newsletter-heading {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 150%;
-    text-align: center;
-    letter-spacing: -1.5px;
-    color: #0c0d34;
-    margin: 0;
-    margin-bottom: 18px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: -1.5px;
+  color: #0c0d34;
+  margin: 0;
+  margin-bottom: 18px;
 }
 .OMB .newsletter .newsletter-text {
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: #0c0d34;
-    max-width: 267px;
-    margin: 0 auto;
-    margin-bottom: 15px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #0c0d34;
+  max-width: 267px;
+  margin: 0 auto;
+  margin-bottom: 15px;
 }
 .OMB .customer-support {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 .OMB .customer-support .customer-support-text {
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: 0.342857px;
-    color: #494a79;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.342857px;
+  color: #494a79;
 }
 .OMB .customer-support .customer-support-heading {
-    font-family: Poppins;
-    margin: 0;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: center;
-    letter-spacing: -1.5px;
-    color: #0c0d34;
-    margin-bottom: 23px;
+  font-family: Poppins;
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -1.5px;
+  color: #0c0d34;
+  margin-bottom: 23px;
 }
 .OMB .customer-support .customer-support-image {
-    max-width: 143px;
-    margin: 0 auto;
+  max-width: 143px;
+  margin: 0 auto;
 }
 .OMB .customer-support .customer-support-list-holder {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .OMB .customer-support .customer-support-list-holder li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 50%;
-    width: 100%;
-    max-width: 146px;
-    border-radius: 25px;
-    background: #4285f4;
-    height: 40px;
-    margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
+  width: 100%;
+  max-width: 146px;
+  border-radius: 25px;
+  background: #4285f4;
+  height: 40px;
+  margin: 5px;
 }
 .OMB .customer-support .customer-support-list-holder li .help-links {
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 18px;
-    text-align: center;
-    color: #ffffff;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
 }
 .OMB .saving-pets {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 .OMB .saving-pets .pets-heading {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: center;
-    letter-spacing: -1.5px;
-    color: #0c0d34;
-    margin: 0;
-    margin-bottom: 30px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -1.5px;
+  color: #0c0d34;
+  margin: 0;
+  margin-bottom: 30px;
 }
 .OMB .saving-pets .pets-image {
-    max-width: 280px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+  max-width: 280px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 .OMB .saving-pets .saving-pets-text {
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: 0.342857px;
-    color: rgba(12, 13, 52, 0.5);
-    max-width: 345px;
-    margin: 0 auto;
-    margin-bottom: 30px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.342857px;
+  color: rgba(12, 13, 52, 0.5);
+  max-width: 345px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 .OMB .saving-pets .numbers-image {
-    max-width: 252px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  max-width: 252px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .OMB .insta-posts {
-    display: flex;
+  display: flex;
 }
 .OMB .insta-posts .insta-user-holder {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    background: #fafafa;
-    padding: 15px 25px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: #fafafa;
+  padding: 15px 25px 18px;
 }
 .OMB .insta-posts .insta-user-holder .insta-logo-holder {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .OMB .insta-posts .insta-user-holder .insta-logo-holder img {
-    max-width: 40px;
-    max-height: 42px;
+  max-width: 40px;
+  max-height: 42px;
 }
 .OMB .insta-posts .insta-user-holder .insta-logo-holder .name-text-holder {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
 }
 .OMB .insta-posts .insta-user-holder .insta-logo-holder .name-text-holder .brand-name {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 10px;
-    line-height: 180%;
-    color: #2c2c2c;
-    margin: 0;
-    margin-bottom: 5px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 180%;
+  color: #2c2c2c;
+  margin: 0;
+  margin-bottom: 5px;
 }
 .OMB .insta-posts .insta-user-holder .insta-logo-holder .name-text-holder .brand-user-name {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 7px;
-    line-height: 112.5%;
-    color: #5a5d74;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 7px;
+  line-height: 112.5%;
+  color: #5a5d74;
 }
 .OMB .insta-posts .insta-user-holder .posts-holder {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 10px;
-    line-height: 180%;
-    color: #2c2c2c;
-    display: flex;
-    flex-direction: column;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 180%;
+  color: #2c2c2c;
+  display: flex;
+  flex-direction: column;
 }
 .OMB .insta-posts .insta-user-holder .posts-holder .posts-text {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 7px;
-    line-height: 112.5%;
-    color: #5a5d74;
-    margin-top: 3px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 7px;
+  line-height: 112.5%;
+  color: #5a5d74;
+  margin-top: 3px;
 }
 .OMB .insta-posts-holder {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 .OMB .insta-posts-holder .insta-posts-list {
-    flex-basis: 33.3%;
+  flex-basis: 33.3%;
 }
 .OMB .footer-section {
-    background: #fafafa;
-    padding-top: 15px;
+  background: #fafafa;
+  padding-top: 15px;
 }
 .OMB .footer-section .see-more-button {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 .OMB .footer-section .see-more-button .see-more img {
-    display: flex;
-    max-width: 50px;
-    margin: 0 auto;
+  display: flex;
+  max-width: 50px;
+  margin: 0 auto;
 }
 .OMB .footer-section .company-logo {
-    max-width: 210px;
-    margin: 0 auto;
-    display: flex;
-    margin-bottom: 15px;
+  max-width: 210px;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 15px;
 }
 .OMB .footer-section .country-dropdown {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 .OMB .footer-section .country-dropdown form label {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    color: #2c2c2c;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #2c2c2c;
 }
 .OMB .footer-section .country-dropdown form select {
-    border: 0;
-    background: transparent;
+  border: 0;
+  background: transparent;
 }
 .OMB .footer-section .easy-to-access .easy-list-holder {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 0 15px;
-    margin-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 15px;
+  margin-bottom: 18px;
 }
 .OMB .footer-section .easy-to-access .easy-list-holder .easy-list .easy-list-heading {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 21px;
-    color: #707070;
-    margin: 0;
-    margin-bottom: 5px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #707070;
+  margin: 0;
+  margin-bottom: 5px;
 }
 .OMB .footer-section .easy-to-access .easy-list-holder .easy-list .easy-list-options {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 180%;
-    color: #707070;
-    margin-bottom: 2px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 180%;
+  color: #707070;
+  margin-bottom: 2px;
 }
 .OMB .footer-section .easy-to-access .easy-list-holder .expand-image {
-    max-width: 13px;
+  max-width: 13px;
 }
 .OMB .footer-section .footer-seperator {
-    border-top: 1px solid #f2f2f2;
-    border-bottom: 1px solid #f2f2f2;
-    padding: 17px 0;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 17px 0;
 }
 .OMB .footer-section .footer-seperator .button-link-list {
-    position: unset;
+  position: unset;
 }
 .OMB .footer-section .follow-us {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 9px;
-    line-height: 180%;
-    color: #89898a;
-    padding-left: 15px;
-    padding-top: 25px;
-    padding-bottom: 10px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 9px;
+  line-height: 180%;
+  color: #89898a;
+  padding-left: 15px;
+  padding-top: 25px;
+  padding-bottom: 10px;
 }
 .OMB .footer-section .payments-method-holder {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px 20px;
 }
 .OMB .footer-section .payments-method-holder .social-network {
-    display: flex;
+  display: flex;
 }
 .OMB .footer-section .payments-method-holder .social-network .social-list {
-    max-width: 31px;
-    margin-right: 5px;
-    max-height: 31px;
+  max-width: 31px;
+  margin-right: 5px;
+  max-height: 31px;
 }
 .OMB .footer-section .payments-method-holder .payment-methods {
-    display: flex;
+  display: flex;
 }
 .OMB .footer-section .payments-method-holder .payment-methods .payment-list {
-    max-width: 36px;
-    max-height: 26px;
+  max-width: 36px;
+  max-height: 26px;
 }
 .OMB .footer-section .payments-method-holder .payment-methods .payment-list.apple {
-    max-width: 24px;
-    max-height: 24px;
-    padding-right: 8px;
+  max-width: 24px;
+  max-height: 24px;
+  padding-right: 8px;
 }
 .OMB .footer-section .input-holder form {
-    max-width: 360px;
+  max-width: 360px;
 }
 .OMB .footer-section .signup-newsletter {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 9px;
-    line-height: 180%;
-    color: #89898a;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0 30px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 9px;
+  line-height: 180%;
+  color: #89898a;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 30px;
 }
 .OMB .footer-section .terms-and-conditions {
-    display: flex;
-    justify-content: space-between;
-    max-width: 300px;
-    margin: 0 auto;
-    margin-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 35px;
 }
 .OMB .footer-section .terms-and-conditions .terms {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 9px;
-    line-height: 180%;
-    color: #89898a;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 9px;
+  line-height: 180%;
+  color: #89898a;
 }
 .OMB .footer-section .footer-image {
-    background: #f2f2f2;
-    padding: 20px 0;
+  background: #f2f2f2;
+  padding: 20px 0;
 }
 .OMB .footer-section .footer-image img {
-    max-width: 217px;
-    margin: 0 auto;
-    display: flex;
+  max-width: 217px;
+  margin: 0 auto;
+  display: flex;
 }
 .OMB .menu-holder {
-    max-height: 100%;
-    overflow: scroll;
-    opacity: 0;
-    z-index: 1000;
-    visibility: hidden;
-    transition: visibility 0s, opacity 1s linear;
-    position: fixed;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(21.7463px);
-    top: 0;
-    width: 100%;
-    background-color: #fff;
-    max-width: 355px;
-    transition: 0.3s ease;
+  max-height: 100%;
+  overflow: scroll;
+  opacity: 0;
+  z-index: 1000;
+  visibility: hidden;
+  transition: visibility 0s, opacity 1s linear;
+  position: fixed;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(21.7463px);
+          backdrop-filter: blur(21.7463px);
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  max-width: 355px;
+  transition: 0.3s ease;
 }
 .OMB .menu-holder .menu-content-holder {
-    background-image: url(../images/menu-bg.png);
-    background-size: cover;
-    background-position: bottom right;
-    height: 100%;
-    min-height: 248px;
-    position: relative;
+  background-image: url("../images/menu-bg.png");
+  background-size: cover;
+  background-position: bottom right;
+  height: 100%;
+  min-height: 248px;
+  position: relative;
 }
 .OMB .menu-holder .menu-content-holder .menu-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 0;
-    max-width: 270px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+  max-width: 270px;
+  margin: 0 auto;
 }
 .OMB .menu-holder .menu-content-holder .menu-header .cross-icon img {
-    max-width: 14px;
+  max-width: 14px;
 }
 .OMB .menu-holder .menu-content-holder .menu-header .menu-heading {
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: #ffffff;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 .OMB .menu-holder .menu-content-holder .menu-header .bag-icon img {
-    max-width: 15px;
+  max-width: 15px;
 }
 .OMB .menu-holder .menu-content-holder .profile-pic {
-    position: absolute;
-    bottom: 0;
-    max-width: 100px;
-    height: auto;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    bottom: 13%;
+  position: absolute;
+  bottom: 0;
+  max-width: 100px;
+  height: auto;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 13%;
 }
 .OMB .menu-holder .user-details-holder {
-    margin-top: -15px;
+  margin-top: -15px;
 }
 .OMB .menu-holder .user-details-holder .user-details .user-name {
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 33px;
-    text-align: center;
-    color: #252426;
-    text-transform: capitalize;
-    margin-bottom: 5px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  color: #252426;
+  text-transform: capitalize;
+  margin-bottom: 5px;
 }
 .OMB .menu-holder .user-details-holder .user-details .user-email {
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    color: rgba(12, 13, 52, 0.5);
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(12, 13, 52, 0.5);
 }
 .OMB .menu-holder .user-details-holder .logout-details .button-link-list {
-    position: unset;
+  position: unset;
 }
 .OMB .menu-holder .user-details-holder .logout-details .button-link-list .button-link {
-    max-width: 190px;
+  max-width: 190px;
 }
 .OMB .menu-holder .menu-items-holder {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
 }
 .OMB .menu-holder .menu-items-holder .menu-items {
-    padding-bottom: 50px;
+  padding-bottom: 50px;
 }
 .OMB .menu-holder .menu-items-holder .menu-items:last-child {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 .OMB .menu-holder .menu-items-holder .menu-items .link {
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 14px;
-    text-align: center;
-    letter-spacing: 0.923077px;
-    color: #252426;
-    text-transform: uppercase;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.923077px;
+  color: #252426;
+  text-transform: uppercase;
 }
 .OMB .menu-holder .menu-btn-holder {
-    padding: 30px 0 60px;
+  padding: 30px 0 60px;
 }
 .OMB .menu-holder .menu-btn-holder .logout-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 25px;
 }
 .OMB .menu-holder .menu-btn-holder .logout-btn .logout-icon {
-    max-width: 36px;
-    padding: 0 15px 0 0;
+  max-width: 36px;
+  padding: 0 15px 0 0;
 }
 .OMB .menu-holder .menu-btn-holder .logout-btn .logout-link {
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #252426;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #252426;
 }
 .OMB .menu-holder .menu-btn-holder .login-btns {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .OMB .menu-holder .menu-btn-holder .login-btns .login-btn {
-    width: 100%;
-    max-width: 134px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 31px;
-    background: #fe5e33;
-    border-radius: 30px;
+  width: 100%;
+  max-width: 134px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 31px;
+  background: #fe5e33;
+  border-radius: 30px;
 }
 .OMB .menu-holder .menu-btn-holder .login-btns .login-btn.no-bg {
-    background-color: transparent;
-    max-width: 85px;
+  background-color: transparent;
+  max-width: 85px;
 }
 .OMB .menu-holder .menu-btn-holder .login-btns .login-btn.no-bg .btn {
-    color: #252426;
+  color: #252426;
 }
 .OMB .menu-holder .menu-btn-holder .login-btns .login-btn .btn {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 10px;
-    line-height: 15px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #ffffff;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.OMB .catalog-page-holder {
+  position: relative;
+  padding: 20px 0;
+}
+.OMB .catalog-page-holder .filter-menu-holder {
+  position: fixed;
+  top: auto;
+  right: auto;
+  left: auto;
+  bottom: 0;
+  max-height: 700px;
+  height: 100%;
+  background: red;
+  width: 100%;
+  max-width: 414px;
+  z-index: 100;
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 20px 20px 0px 0px;
+}
+.OMB .catalog-page-holder .filter-menu-holder .material-heading {
+  padding: 0 30px;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #020306;
+  letter-spacing: 0.28px;
+}
+.OMB .catalog-page-holder .filter-menu-holder .material-btn-holder {
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.OMB .catalog-page-holder .filter-menu-holder .material-btn-holder div {
+  margin: 0 10px;
+  margin-top: 20px;
+}
+.OMB .catalog-page-holder .filter-menu-holder .material-btn-holder button {
+  background: #f6f6f6;
+  border-radius: 25px;
+  border: none;
+  padding: 10px 30px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #0c0d34;
+}
+.OMB .catalog-page-holder .filter-menu-holder .material-btn-holder .selected-btn {
+  background: #fe5e33 !important;
+  border-radius: 25px !important;
+  font-family: SF Pro Display;
+  color: #ffffff !important;
+}
+.OMB .catalog-page-holder .filter-menu-holder .color-heading {
+  margin-top: 30px;
+  padding: 0 30px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.28px;
+  color: #020306;
+}
+.OMB .catalog-page-holder .filter-menu-holder .color-palette-holder {
+  display: flex;
+  padding: 15px 30px;
+}
+.OMB .catalog-page-holder .filter-menu-holder .color-palette-holder .border-wrapper {
+  width: 100%;
+  max-width: 40px;
+  mix-blend-mode: normal;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 3px;
+  margin: 0 6px;
+}
+.OMB .catalog-page-holder .filter-menu-holder .color-palette-holder .border-active {
+  border: 1px solid #e4e4e8;
+}
+.OMB .catalog-page-holder .filter-menu-holder .color-palette-holder .color-container {
+  max-width: 40px;
+  max-height: 40px;
+  width: 100%;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.OMB .catalog-page-holder .filter-menu-holder .color-palette-holder .color-container img {
+  max-width: 15px;
+}
+.OMB .catalog-page-holder .filter-menu-holder .color-palette-holder .color-black {
+  background: #000000;
+}
+.OMB .catalog-page-holder .filter-menu-holder .color-palette-holder .color-pink {
+  background: #ffabd0;
+}
+.OMB .catalog-page-holder .filter-menu-holder .color-palette-holder .color-white {
+  background: #ffffff;
+}
+.OMB .catalog-page-holder .filter-menu-holder .color-palette-holder .color-green {
+  background: #00d99a;
+}
+.OMB .catalog-page-holder .filter-menu-holder .color-palette-holder .color-orange {
+  background: #fe5e33;
+}
+.OMB .catalog-page-holder .filter-menu-holder .color-palette-holder .color-darkpink {
+  background: #ff87a2;
+}
+.OMB .catalog-page-holder .filter-menu-holder .select-gender-and-close-filter-menu-holder {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+.OMB .catalog-page-holder .filter-menu-holder .select-gender-and-close-filter-menu-holder .select-gender-text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.28px;
+  color: #020306;
+}
+.OMB .catalog-page-holder .filter-menu-holder .select-gender-and-close-filter-menu-holder .close-icon {
+  max-width: 16px;
+  max-height: 16px;
+}
+.OMB .catalog-page-holder .filter-menu-holder .select-gender {
+  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.OMB .catalog-page-holder .filter-menu-holder .select-gender div {
+  margin: 0 10px;
+  margin-top: 10px;
+}
+.OMB .catalog-page-holder .filter-menu-holder .select-gender button {
+  background: #f6f6f6;
+  border-radius: 25px;
+  border: none;
+  padding: 10px 30px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #0c0d34;
+}
+.OMB .catalog-page-holder .filter-menu-holder .select-gender .selected-btn {
+  background: #fe5e33 !important;
+  border-radius: 25px !important;
+  font-family: SF Pro Display;
+  color: #ffffff !important;
+}
+.OMB .catalog-page-holder .back-arrow {
+  max-width: 340px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.OMB .catalog-page-holder .back-arrow img {
+  max-width: 8px;
+}
+.OMB .catalog-page-holder .filter-section-holder {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+}
+.OMB .catalog-page-holder .filter-section-holder .filter-icon {
+  max-width: 14px;
+}
+.OMB .catalog-page-holder .filter-section-holder .filter-btn-holder {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.OMB .catalog-page-holder .filter-section-holder .filter-text {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  margin-left: 5px;
+}
+.OMB .catalog-page-holder .filter-section-holder .filter-section-slider {
+  flex: 0 0 66.67%;
+  min-width: 85.67%;
+  max-width: 66.67%;
+}
+.OMB .catalog-page-holder .filter-section-holder .filter-section-slider button {
+  width: 110px;
+  background: none;
+  outline: none;
+  border: 1px solid #eff3f8;
+  border-radius: 30px;
+  padding: 6px 35px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #0c0d34;
+}
+.OMB .catalog-page-holder .catalog-info-holder {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-bottom: 25px;
+}
+.OMB .catalog-page-holder .catalog-info-holder .number-of-products {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+}
+.OMB .catalog-page-holder .catalog-info-holder .clear-filters {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+.OMB .catalog-page-holder .product-details-section {
+  background: #f2f5f8;
+  min-height: 200px;
+  border-radius: 15px;
+  max-width: 380px;
+  margin: 0 auto;
+  position: relative;
+}
+.OMB .catalog-page-holder .product-details-section.section-2 {
+  min-height: 185px;
+}
+.OMB .catalog-page-holder .product-details-section.section-2 .product-showcase img {
+  max-width: 115px;
+}
+.OMB .catalog-page-holder .product-details-section.section-3 {
+  min-height: 191px;
+  position: relative;
+}
+.OMB .catalog-page-holder .product-details-section.section-3 .product-wearing {
+  max-width: 90px;
+  left: 10%;
+}
+.OMB .catalog-page-holder .product-details-section.section-3 .product-showcase {
+  z-index: 99;
+  right: 6%;
+  top: -58px;
+}
+.OMB .catalog-page-holder .product-details-section.section-3 .product-showcase img {
+  max-width: 144px;
+}
+.OMB .catalog-page-holder .product-details-section.section-3 .new-tag {
+  position: absolute;
+  top: 6%;
+  left: 3%;
+}
+.OMB .catalog-page-holder .product-details-section.section-3 .new-tag img {
+  max-width: 35px;
+}
+.OMB .catalog-page-holder .product-details-section .product-wearing {
+  position: absolute;
+  left: 5%;
+  top: -26px;
+}
+.OMB .catalog-page-holder .product-details-section .product-wearing img {
+  max-width: 114px;
+}
+.OMB .catalog-page-holder .product-details-section .product-text {
+  position: absolute;
+  left: 5%;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.275px;
+  color: #ffffff;
+  bottom: 20px;
+}
+.OMB .catalog-page-holder .product-details-section .product-showcase {
+  position: absolute;
+  right: 13%;
+  top: -30px;
+}
+.OMB .catalog-page-holder .product-details-section .product-showcase img {
+  max-width: 93px;
+}
+.OMB .catalog-page-holder .product-details-section .preview-text {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.275px;
+  color: #ffffff;
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 10px;
+  bottom: 45%;
+  right: -10px;
+}
+.OMB .catalog-page-holder .product-pricing-holder {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  padding: 0 20px;
+}
+.OMB .catalog-page-holder .product-pricing-holder .product-pricing {
+  width: 100%;
+  max-width: 168px;
+}
+.OMB .catalog-page-holder .product-pricing-holder .product-pricing .product-heading {
+  font-family: "SF Pro Display";
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.175px;
+  text-transform: uppercase;
+  color: #323643;
+  margin-bottom: 10px;
+}
+.OMB .catalog-page-holder .product-pricing-holder .product-pricing .product-price {
+  font-family: "SF Pro Display";
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.923077px;
+}
+.OMB .catalog-page-holder .product-pricing-holder .button-link-list {
+  position: unset;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
+}
+.OMB .catalog-page-holder .product-pricing-holder .button-link-list .button-link {
+  max-width: 134px;
+  height: 31px;
+  margin: 0;
+  width: 100%;
+}
+.OMB .catalog-page-holder .product-pricing-holder .button-link-list .button-link .btn {
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.OMB .catalog-page-holder .christmas-holder {
+  position: relative;
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+.OMB .catalog-page-holder .christmas-holder .type-text {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 1.6px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+}
+.OMB .catalog-page-holder .button-link-list {
+  position: unset;
+}
+.OMB .catalog-page-holder .button-link-list.show-more .button-link {
+  background-color: transparent;
+  border: 2px solid #fe5e33;
+  max-width: 178px;
+  height: 37px;
+}
+.OMB .catalog-page-holder .button-link-list.show-more .button-link .btn {
+  color: #fe5e33;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .visible {
-    visibility: visible !important;
-    opacity: 1 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 .lock-scroll {
-    overflow: hidden;
-}
+  overflow: hidden;
+}/*# sourceMappingURL=App.css.map */

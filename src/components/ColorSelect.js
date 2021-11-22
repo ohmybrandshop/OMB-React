@@ -30,7 +30,7 @@ const ColorSelect = ({ color, colorClass }) => {
 			)}
 		>
 			<div
-                className={classNames('color-container', colorClass )}
+        className={classNames('color-container', colorClass )}
 				onClick={() => {
 					toggleColor(color);
 				}}

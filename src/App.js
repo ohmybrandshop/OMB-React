@@ -6,19 +6,19 @@ const Home = lazy(() => import('./pages/Home'));
 const Catalog = lazy(() => import('./pages/Catalog'));
 
 function App() {
-    return (
-        <>
-            <Suspense fallback={<div className="loading"></div>}>
-                <BrowserRouter>
-                    <Navbar />
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/catalog" element={<Catalog />} />
-                    </Routes>
-                </BrowserRouter>
-            </Suspense>
-        </>
-    );
+  return (
+    <>
+      <Suspense fallback={<div className="loading"></div>}>
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/catalog" element={<Catalog />} />
+          </Routes>
+        </BrowserRouter>
+      </Suspense>
+    </>
+  );
 }
 
 export default App;

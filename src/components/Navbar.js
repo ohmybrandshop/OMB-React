@@ -84,7 +84,7 @@ const Navbar = () => {
 				<div className="menu-btn-holder">
 					<div className="logout-btn">
 						<img className="logout-icon" src="/images/icon-logout.svg" />
-                        <Link className="logout-link" to="/">Logout</Link>
+            <Link className="logout-link" to="/">Logout</Link>
 					</div>
 				</div>
 			</div>

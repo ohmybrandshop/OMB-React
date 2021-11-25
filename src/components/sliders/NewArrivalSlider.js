@@ -3,8 +3,8 @@ import Slider from 'react-slick';
 const NewArrivalSlider = () => {
   return (
     <Slider {...newArrivalSettings} className="new-arrival-products-holder">
-      {slides.map((slide) => (
-        <div className="new-arrival-products">
+      {slides.map(slide => (
+        <div className="new-arrival-products" key={slide.key}>
           <div className="new-arrival-image">
             <img src={slide.imgSrc} alt={slide.alt} />
           </div>
@@ -33,12 +33,13 @@ const newArrivalSettings = {
   slidesToShow: 2,
   arrows:false,
   centerMode: true,
-  centerPadding:'20px 0 0',
+  centerPadding: '20px 0 0',
   lazyLoad: true,
 };
 
 const slides = [
   {
+    key: 0,
     imgSrc: '/images/new-arrival.webp',
     alt: 'new-arrival',
     productName: 'Yellow Beret',
@@ -52,7 +53,7 @@ const slides = [
   },
   {
     imgSrc: '/images/new-arrival-2.png',
-    alt: 'new-arrival-1',
+    alt: 'new-arrival-2',
     productName: 'Pink Harness',
     productPrice: '12',
   },

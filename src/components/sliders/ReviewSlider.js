@@ -3,8 +3,8 @@ import Slider from 'react-slick';
 const ReviewSlider = () => {
   return (
     <Slider {...reviewSliderSettings}>
-      {slides.map((slide) => (
-        <li className="reviews-slider-content-holder">
+      {slides.map(slide => (
+        <li className="reviews-slider-content-holder" key={slide.key}>
           <div className="review-slider-content">
             <img src={slide.imgSrc} />
             <span className="checkmark">
@@ -23,7 +23,7 @@ const reviewSliderSettings = {
   speed: 300,
   slidesToScroll: 1,
   slidesToShow: 1,
-  arrows:false,
+  arrows: false,
   centerMode: true,
   centerPadding:'100px',
 };

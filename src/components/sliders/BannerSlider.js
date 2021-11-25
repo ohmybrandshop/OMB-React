@@ -10,7 +10,7 @@ const BannerSlider = (props) => {
       }}
     >
       {slides.map(slide => (
-        <img src={slide.imgSrc} alt={slide.imgSrc} className={slide.className} />
+        <img {...slide} />
       ))}
     </Slider>
   );
@@ -22,24 +22,25 @@ const bannerSettings = {
   speed: 300,
   slidesToScroll: 1,
   slidesToShow: 1,
-  arrows:false,
+  arrows: false,
 };
 
 const slides = [
   {
-    imgSrc: '/images/header-bg-2.png',
+    key: 2,
+    src: '/images/header-bg-2.png',
     alt: 'header-image3',
     className: 'header-special-image'
   },
   {
-    imgSrc: '/images/header-bg.png',
+    key: 0,
+    src: '/images/header-bg.png',
     alt: 'header-image1',
-    className: ''
   },
   {
-    imgSrc: '/images/header-bg-1.png',
+    key: 1,
+    src: '/images/header-bg-1.png',
     alt: 'header-image2',
-    className: ''
   }
 ]
 
